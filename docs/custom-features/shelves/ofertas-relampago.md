@@ -1,52 +1,67 @@
 # Ofertas Relâmpago
 
-Vitrine de ofertas relâmpago
+Esse componente é reponsável pela vitrine de ofertas relâmpago, cada produto recebe uma data e horário para iniciar e finalizar a oferta.
 
 ## TODO
 
-Refatorar o código de ofertas relâmpago para não depender da vitrine de Black Friday
+Refatorar o código de ofertas relâmpago para não depender da vitrine de Black Friday. Criar um componente para vitrine customizada que possa ser reutilizado facilmente, e outro para ofertas relâmpago que possa ser usado em qualquer página.
 
 ## Usage
 
-react/EnrichedContent.js
+react/FlashSalesHome.js
 
 ```jsx
-import EnrichedContent from './components/PDP/EnrichedContent';
+import FlashSalesHome from './components/PDP/FlashSalesHome';
 
-export default EnrichedContent;
+export default FlashSalesHome;
 ```
 
 store/interfaces.json
 
 ```json
-  "arno-enriched-content": {
-    "component": "EnrichedContent",
-    "composition": "children"
-  },
+  "custom-flash-sales-home": {
+    "component": "FlashSalesHome"
+  }
 ```
 
 ## Props
 
-| Prop         | Type    | Required | Default | Description                                  |
-| children   | ReactNode  | No      |       | HTML com o conteúdo enriquecido |
+| Prop         | Type             | Required | Default | Description                                  |
+| ------------ | ---------------- | -------- | ------- | -------------------------------------------- |
+| activePromotions         | Array of objects | Yes      | []      | Array de objetos com os produtos |
+
+### Props de `activePromotions`
+
+Cada objeto no array de `activePromotions` deve ter as seguintes propriedades:
+
+| Property | Type   | Required | Description                           |
+| -------- | ------ | -------- | ------------------------------------- |
+| productClusterId    | string | Yes      | Id da coleção cadastrada na VTEX      |
+| image    | string | No       | Banner acima da vitrine                        |
+| title | string | No       | Título da vitrine        |
+| description     | string | No      | Descrição da vitrine           |
+| ctaButton | string | No       | Texto do botão abaixo da vitrine                    |
+| ctaButtonLink | string | No       | Link do botão                    |
+| items | Array of objects | Yes       | Produtos da vitrine                    |
+
+### Props de `items`
+
+| Property | Type   | Required | Description                           |
+| -------- | ------ | -------- | ------------------------------------- |
+| id    | string | Yes      | Id do produto      |
+| initialDate    | Date | Yes       | Data e horário inicial da oferta                        |
+| endDate | Date | Yes       | Data e horário final da oferta        |
 
 ## Examples
 
 ```jsx
-  "flex-layout.col#pdp-description": {
-    "children": [
-      "arno-enriched-content"
-    ],
-    "props": {
-      "blockClass": "pdp-description"
-    }
-  },
-  "arno-enriched-content": {
-    "children": ["rich-text#pdp-description", "product-description"]
-  },
+  "store.home": { 
+    "blocks": [
+      "custom-flash-sales-home",
+    ]
+  }
 ```
 
 ## Notes
 
-Esse componente manipula o DOM para injetar o HTML vindo do cadastro do produto.
-Ele aguarda o evento canUseDom da VTEX para inserir o HTML. Os scripts são adicionados ao body da página.
+Os produtos dentro da coleção na VTEX devem estar na ordem das datas que eles vão ser ofertados.
