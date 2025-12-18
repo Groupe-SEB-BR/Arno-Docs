@@ -40,41 +40,74 @@ store/interfaces.json
 },
 ```
 
-## Props do Componente Categories
+## Estrutura
 
-| Prop                               | Tipo | Obrigatório? | Descrição | Valor Padrão |
-| ---------------------------------- | ---- | ------------ | --------- | ------------ |
-| _Este componente não recebe props_ | -    | -            | -         | -            |
+O componente `Category` possui a seguinte estrutura hierárquica:
+
+```text
+CategoryProvider (Context)
+└── main
+  ├── Head (Componente)
+  ├── Filters (Componente)
+  └── Posts (Componente)
+```
+
+### Componentes Filhos
+
+- **`Head`**: Componente responsável pelo cabeçalho da página de categoria
+- **`Filters`**: Componente de filtros para refinamento dos posts
+- **`Posts`**: Componente que lista os posts da categoria selecionada
+
+#### Head
+
+Componente responsável por renderizar o cabeçalho da página de categoria do blog.
+Exibe o breadcrumb de navegação e as informações da categoria (título e descrição).
+
+Este componente utiliza o contexto `useCategory` para obter:
+
+- `params`: Parâmetros da URL, incluindo `categoryUrl`
+- `category`: Objeto contendo informações da categoria (name, description)
+
+**Estrutura renderizada:**
+
+- Breadcrumb com navegação hierárquica (Início > Categorias > Categoria Atual)
+- Título da categoria (h1)
+- Descrição da categoria (h2)
+
+#### Filters
+
+Componente responsável por renderizar os filtros dos posts da categoria.
+
+Este componente utiliza o contexto `useCategory` para obter:
+
+- `filters`: Array com os filtros da categoria
+- `activeFilter`: Filtro selecionado
+- `handleFilterPosts`: Função que filtra os posts pelo filtro selecionado
+- `isOpenFilter`: Booleano para mostrar ou não o modal de filtros no mobile
+- `handleOpenFilter`: Função que abre o modal de filtros no mobile
+- `handleClearFilter`: Função que limpa o filtro selecionado
+
+#### Posts
+
+Componente responsável por renderizar os posts da categoria ativa.
+
+Este componente utiliza o contexto `useCategory` para obter:
+
+- `filteredPosts`: Posts da categoria atual
+- `loading`: Booleano que indica se os dados estão sendo carregados
+- `handleLoadMorePosts`: Função que lida com a paginação da categoria
+- `hasMorePosts`: Booleano que indica se deve mostrar o botão de ver mais posts
+- `DEFAULT_POST_COUNT`: Constante que indica a quantidade de posts que deve ser renderizadas
+
+### Context
+
+- **`CategoryProvider`**: Provedor de contexto que gerencia o estado compartilhado entre os componentes filhos
 
 ## Observações
 
-1. **Este componente não recebe nenhuma prop como parâmetro**
-2. É um componente auto-suficiente que busca seus próprios dados
-3. Gerencia seu estado interno (`categories` e `loading`)
-4. Busca categorias usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](/custom-features/blog/api-masterdata/)
-
-## Funcionamento do Componente
-
-### Estados Internos
-
-- **`categories`**: Array de categorias obtidas da API, ordenadas alfabeticamente
-- **`loading`**: Boolean que indica se os dados estão sendo carregados
-
-### Ciclo de Vida
-
-1. **Montagem**: Ao ser renderizado, o componente busca automaticamente as categorias
-2. **Busca de Dados**: Chama `fetchCategories()` da API
-3. **Processamento**: Ordena as categorias alfabeticamente por nome
-4. **Renderização**: Exibe as categorias com imagem e nome
+1. Busca a categoria usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](/custom-features/blog/api-masterdata/)
 
 ### Tratamento de Erros
 
 - Em caso de erro na API, registra no console e finaliza o carregamento
 - Mantém a interface funcional mesmo com falhas na API
-
-## Comportamento
-
-1. Exibe "Loading..." durante a busca de dados
-2. Apresenta categorias em ordem alfabética
-3. Cada categoria é um link para sua página específica
-4. Breadcrumb de navegação fixo (não dinâmico)

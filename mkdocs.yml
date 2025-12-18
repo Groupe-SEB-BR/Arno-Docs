@@ -23,9 +23,11 @@ nav:
     - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
   - Blog:
     - Blog API Masterdata: custom-features/blog/api-masterdata.md
+    - Blog Home: custom-features/blog/home.md
     - Blog Categories: custom-features/blog/categories.md
     - Blog Category: custom-features/blog/category.md
     - Blog Post: custom-features/blog/post.md
+    - Blog Tag: custom-features/blog/tag.md
   - Global Features:
     - Meta Tags: custom-features/home/meta-tags.md
     - Data Structure: custom-features/home/data-structure.md
