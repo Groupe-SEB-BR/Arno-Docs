@@ -1,0 +1,2196 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../minicart/custom-arno-discount-popup/">
+      
+      
+        <link rel="next" href="../home/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Blog API Masterdata - Arno Store</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="arno" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-de-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Arno Store" class="md-header__button md-logo" aria-label="Arno Store" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arno Store
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blog API Masterdata
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Arno Store" class="md-nav__button md-logo" aria-label="Arno Store" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Arno Store
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Header
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Header
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../header/top-black-bar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../header/new-menu-bar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Menu Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../header/black-button/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Button
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/home-popup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Popup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/slider-hero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slider Hero
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/main-categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Categories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/home-tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Tabs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/shelf-lancamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shelf Lancamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/special-selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Special Selection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PDP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PDP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdp/blog-pdp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog Post
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdp/enriched-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enriched Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minicart
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Minicart
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/arno-minicart-giftbar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gift Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/coupon-form-minicart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coupon Form
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/custom-arno-resume-price-minicart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Price Resume
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/custom-price-minicart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Price
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/cross-selling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cross Selling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/custom-arno-discount-popup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Arno Discount Popup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog API Masterdata
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog API Masterdata
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão Geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoints-do-master-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoints do Master Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoints do Master Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bp-blog-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BP - Blog Posts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bc-blog-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BC - Blog Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sc-subcategories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SC - Subcategories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-de-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funções de API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funções de API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetchcategories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fetchCategories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsubcategoriesbycategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getSubcategoriesByCategory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcategorybyurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCategoryByUrl
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpostsbyid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPostsById
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getposts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPosts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpostsbycategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPostsByCategory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patchincreasepostviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        patchIncreasePostViews
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmostviewedpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getMostViewedPost
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog Categories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog Category
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../post/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog Post
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog Tag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Features
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Global Features
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/meta-tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/data-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/flash-sales-home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flash Sales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shelves/ofertas-relampago/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flash Sales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/custom-croct-popup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Croct Popup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minicart/croct-controler-component/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Croct Controler Component
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão Geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoints-do-master-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoints do Master Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoints do Master Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bp-blog-posts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BP - Blog Posts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bc-blog-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BC - Blog Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sc-subcategories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SC - Subcategories
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-de-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funções de API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funções de API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetchcategories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fetchCategories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsubcategoriesbycategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getSubcategoriesByCategory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcategorybyurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCategoryByUrl
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpostsbyid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPostsById
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getposts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPosts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpostsbycategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPostsByCategory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patchincreasepostviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        patchIncreasePostViews
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmostviewedpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getMostViewedPost
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacao-de-api">Documentação de API</h1>
+<h2 id="visao-geral">Visão Geral</h2>
+<p>Este módulo contém todas as chamadas de API para interagir com o Master Data da VTEX. As funções estão organizadas para gerenciar posts de blog, categorias e subcategorias.</p>
+<h2 id="endpoints-do-master-data">Endpoints do Master Data</h2>
+<h3 id="bp-blog-posts">BP - Blog Posts</h3>
+<p><code>/api/dataentities/BP/</code></p>
+<p><strong>Propósito:</strong> Gerenciar posts/receitas do blog</p>
+<p><strong>Campos disponíveis:</strong></p>
+<p><code>id:</code> Identificador único</p>
+<p><code>url:</code> Slug da URL</p>
+<p><code>title:</code> Título do post</p>
+<p><code>description:</code> Descrição/resumo</p>
+<p><code>brand:</code> Marca associada</p>
+<p><code>category:</code> Categoria principal</p>
+<p><code>categories:</code> Array de categorias</p>
+<p><code>complexity:</code> Nível de dificuldade</p>
+<p><code>recipeTime:</code> Tempo de preparo</p>
+<p><code>ingredients:</code> Lista de ingredientes</p>
+<p><code>instructions:</code> Passo a passo</p>
+<p><code>imageDesktop</code>, <code>imageMobile</code>, <code>imageCard</code>: Imagens em diferentes resoluções</p>
+<p><code>useVideo</code>: Booleano para vídeo</p>
+<p><code>videoIframe</code>: Embed do vídeo</p>
+<p><code>posttags</code>: Tags para SEO</p>
+<p><code>metaTitle</code>, <code>metaDescription</code>: Meta tags</p>
+<p><code>collection</code>: Coleção associada</p>
+<p><code>views</code>: Contador de visualizações</p>
+<p><code>filters</code>: Filtros para busca</p>
+<p><code>createdIn</code>: Data de criação</p>
+<h3 id="bc-blog-categories">BC - Blog Categories</h3>
+<p><code>/api/dataentities/BC/</code></p>
+<p><strong>Propósito:</strong> Gerenciar categorias do blog</p>
+<p><strong>Campos disponíveis:</strong></p>
+<p><code>id:</code> Identificador único</p>
+<p><code>name:</code> Nome da categoria</p>
+<p><code>url:</code> Slug da URL</p>
+<p><code>description:</code> Descrição da categoria</p>
+<p><code>imageDesktop</code>, <code>imageMobile</code>: Imagens da categoria</p>
+<p><code>categoryMetaTitle</code>, <code>categoryMetaDescription</code>: Meta tags da categoria</p>
+<p><code>filters:</code> Filtros disponíveis</p>
+<p><code>order:</code> Ordenação</p>
+<p><code>createdIn</code>, <code>updatedIn</code>: Datas de criação e atualização</p>
+<h3 id="sc-subcategories">SC - Subcategories</h3>
+<p><code>/api/dataentities/SC/</code></p>
+<p><strong>Propósito:</strong> Gerenciar subcategorias</p>
+<p><strong>Campos disponíveis:</strong></p>
+<p><code>id:</code> Identificador único</p>
+<p><code>name:</code> Nome da subcategoria</p>
+<p><code>url:</code> Slug da URL</p>
+<p><code>description:</code> Descrição</p>
+<p><code>imageDesktop</code>, <code>imageMobile</code>: Imagens</p>
+<p><code>parentCategoryId:</code> ID da categoria pai</p>
+<h2 id="funcoes-de-api">Funções de API</h2>
+<h3 id="getpost">getPost</h3>
+<p><strong>Descrição:</strong></p>
+<p>Busca um post específico pelo seu URL (slug).
+// Todo: Melhorar a nomenclatura dessa função</p>
+<p><strong>Parâmetros:</strong></p>
+<ul>
+<li><code>url</code> (string): URL do post a ser buscado</li>
+</ul>
+<p><strong>Endpoint:</strong></p>
+<ul>
+<li><code>GET /api/dataentities/BP/search</code></li>
+</ul>
+<p><strong>Parâmetros de Query:</strong></p>
+<ul>
+<li>
+<p><code>_fields</code>: Campos específicos a retornar</p>
+</li>
+<li>
+<p><code>_where</code>: Filtro por URL (url=${url})</p>
+</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise contendo o objeto do post ou null se não encontrado</li>
+</ul>
+<p><strong>URL Completa:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="s1">&#39;/api/dataentities/BP/search?_fields=brand,category,categories,complexity,description,id,imageDesktop,imageMobile,metaTitle,metaDescription,ingredients,instructions,useVideo,videoIframe,posttags,recipeTime,title,url,collection,views,filters&amp;_where=url=${url}&#39;</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getPost</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">getPost</span><span class="p">(</span><span class="s1">&#39;como-fazer-bolo-de-chocolate&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">post</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">post</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Post encontrado:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">post</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Post não encontrado&#39;</span><span class="p">);</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="fetchcategories">fetchCategories</h3>
+<p><strong>Descrição:</strong></p>
+<p>Busca todas as categorias disponíveis.</p>
+<p><strong>Parâmetros:</strong> Nenhum</p>
+<p><strong>Endpoint:</strong></p>
+<ul>
+<li><code>GET /api/dataentities/BC/search</code></li>
+</ul>
+<p><strong>Parâmetros de Query:</strong></p>
+<ul>
+<li><code>_fields</code>: Campos específicos a retornar</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li><code>Promise&lt;Category[]&gt;</code>: Array de categorias</li>
+</ul>
+<p><strong>Transformação de Dados:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Mapeia a resposta para o formato Category</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">category</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">category.id</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nx">categoryMetaDescription</span><span class="o">:</span><span class="w"> </span><span class="kt">category.categoryMetaDescription</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nx">categoryMetaTitle</span><span class="o">:</span><span class="w"> </span><span class="kt">category.categoryMetaTitle</span><span class="p">,</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nx">createdIn</span><span class="o">:</span><span class="w"> </span><span class="kt">category.createdIn</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="kt">category.description</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nx">imageDesktop</span><span class="o">:</span><span class="w"> </span><span class="kt">category.imageDesktop</span><span class="p">,</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nx">imageMobile</span><span class="o">:</span><span class="w"> </span><span class="kt">category.imageMobile</span><span class="p">,</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nx">filters</span><span class="o">:</span><span class="w"> </span><span class="kt">category.filters</span><span class="p">,</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">category.name</span><span class="p">,</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="kt">category.url</span><span class="p">,</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="nx">image</span><span class="o">:</span><span class="w"> </span><span class="kt">category.imageDesktop</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">category</span><span class="p">.</span><span class="nx">imageMobile</span><span class="p">,</span><span class="w"> </span><span class="c1">// Fallback</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="nx">order</span><span class="o">:</span><span class="w"> </span><span class="kt">category.order</span><span class="p">,</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="nx">updatedIn</span><span class="o">:</span><span class="w"> </span><span class="kt">category.updatedIn</span><span class="p">,</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">}));</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">fetchCategories</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">fetchCategories</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">categories</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nx">categories</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">cat</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cat</span><span class="p">.</span><span class="nx">name</span><span class="p">));</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="getsubcategoriesbycategory">getSubcategoriesByCategory</h3>
+<p><strong>Descrição:</strong> Busca subcategorias de uma categoria específica.</p>
+<p><strong>Parâmetros:</strong></p>
+<ul>
+<li><code>categoryId</code> (string): ID da categoria pai</li>
+</ul>
+<p><strong>Endpoint:</strong></p>
+<ul>
+<li><code>GET /api/dataentities/SC/search</code></li>
+</ul>
+<p><strong>Parâmetros de Query:</strong></p>
+<ul>
+<li><code>_fields</code>: Campos específicos a retornar</li>
+<li><code>_where</code>: Filtro por categoria pai (<code>parentCategoryId=${categoryId}</code>)</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise contendo array de subcategorias</li>
+</ul>
+<p><strong>URL Completa:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="s1">&#39;/api/dataentities/SC/search?_fields=id,name,url,description,imageDesktop,imageMobile,parentCategoryId&amp;_where=parentCategoryId=${categoryId}&#39;</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getSubcategoriesByCategory</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nx">getSubcategoriesByCategory</span><span class="p">(</span><span class="s1">&#39;cat123&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">subcategories</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nx">subcategories</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">sub</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sub</span><span class="p">.</span><span class="nx">name</span><span class="p">));</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="getcategorybyurl">getCategoryByUrl</h3>
+<p><strong>Descrição:</strong> Busca uma categoria pelo seu URL.</p>
+<p><strong>Parâmetros:</strong></p>
+<ul>
+<li><code>categoryUrl</code> (string): URL da categoria</li>
+</ul>
+<p><strong>Endpoint:</strong></p>
+<p><code>GET /api/dataentities/BC/search</code></p>
+<p><strong>Parâmetros de Query:</strong></p>
+<ul>
+<li><code>_fields</code>: Campos específicos a retornar</li>
+<li><code>_where</code>: Filtro por URL (<code>url=${categoryUrl}</code>)</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise contendo o objeto da categoria</li>
+</ul>
+<p><strong>URL Completa:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="s1">&#39;/api/dataentities/BC/search?_fields=id,name,description,imageDesktop,imageMobile,categoryMetaTitle,categoryMetaDescription,filters&amp;_where=url=${categoryUrl}&#39;</span><span class="p">;</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getCategoryByUrl</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nx">getCategoryByUrl</span><span class="p">(</span><span class="s1">&#39;sobremesas&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">categoria</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Categoria encontrada:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">categoria</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="getpostsbyid">getPostsById</h3>
+<p><strong>Descrição:</strong> Busca um post pelo seu ID.</p>
+<p><strong>Parâmetros:</strong></p>
+<ul>
+<li><code>id</code> (number, padrão: 1): ID do post</li>
+</ul>
+<p><strong>Endpoint</strong>:</p>
+<p><code>GET /api/dataentities/BP/search</code></p>
+<p><strong>Parâmetros de Query:</strong></p>
+<ul>
+<li>
+<p><code>_fields</code>: Campos específicos a retornar</p>
+</li>
+<li>
+<p><code>_where_</code>: Filtro por ID (<code>id=${id}</code>)</p>
+</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise contendo o post</li>
+</ul>
+<p><strong>URL Completa::</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="s1">&#39;/api/dataentities/BP/search?_fields=useVideo,videoIframe,imageCard,views,title,url,id,createdIn,filters&amp;_where=id=${id}&#39;</span><span class="p">;</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getPostsById</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nx">getPostsById</span><span class="p">(</span><span class="mf">42</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">post</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Post encontrado:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">post</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="getposts">getPosts</h3>
+<p><strong>Descrição:</strong> Busca posts com paginação e filtros.</p>
+<p><strong>Parâmetros:</strong></p>
+<ul>
+<li><code>start</code> (number, padrão: 0): Índice inicial para paginação</li>
+<li><code>orderName</code> (string, padrão: 'createdIn'): Campo para ordenação</li>
+<li><code>orderType</code> (string, padrão: 'DESC'): Tipo de ordenação (ASC/DESC)</li>
+<li><code>filterCategory</code> (string, padrão: ''): Filtro por categoria</li>
+</ul>
+<p><strong>Endpoint:</strong></p>
+<p><code>GET /api/dataentities/BP/search</code></p>
+<p><strong>Parâmetros de Query:</strong></p>
+<ul>
+<li>
+<p><code>_fields:</code> Campos específicos a retornar</p>
+</li>
+<li>
+<p><code>categories:</code> Filtro por categoria (<code>${filterCategory} usa wildcard</code>)</p>
+</li>
+<li>
+<p><code>_sort:</code> Ordenação (<code>${orderName} ${orderType}</code>)</p>
+</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise contendo array de posts</li>
+</ul>
+<p><strong>URL Completa:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="s1">&#39;/api/dataentities/BP/search?categories=*${filterCategory}*&amp;_fields=imageCard,title,url,id,createdIn,categories,posttags,views,videoIframe,useVideo,filters&amp;_sort=${orderName} ${orderType}&#39;</span><span class="p">;</span>
+</span></code></pre></div>
+<p><strong>Paginação:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s1">&#39;REST-Range&#39;</span><span class="o">:</span><span class="w"> </span><span class="sb">`resources=</span><span class="si">${</span><span class="nx">start</span><span class="si">}</span><span class="sb">-</span><span class="si">${</span><span class="nx">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">12</span><span class="si">}</span><span class="sb">`</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1">// Ex: start=0 → resources=0-12 (13 itens)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1">// Ex: start=12 → resources=12-24 (13 itens)</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getPosts</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fetch</span><span class="w"> </span><span class="o">=</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="nx">category</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">defaultCategory</span><span class="p">.</span><span class="nx">name</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="o">?</span><span class="w"> </span><span class="nx">getPosts</span><span class="p">(</span><span class="nx">postCount</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;createdIn&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;DESC&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="nx">getPosts</span><span class="p">(</span><span class="nx">postCount</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;createdIn&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;DESC&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">category</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="getpostsbycategory">getPostsByCategory</h3>
+<p><strong>Descrição:</strong></p>
+<p>Busca posts por nome de categoria.</p>
+<p><strong>Parâmetros:</strong></p>
+<ul>
+<li><code>categoryName</code> (string): Nome da categoria</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise contendo array de posts</li>
+</ul>
+<p><strong>Endpoint:</strong></p>
+<p><code>GET /api/dataentities/BP/search</code></p>
+<p><strong>Casos Especiais:</strong></p>
+<ul>
+<li>
+<p><code>categoryName === 'Todas as categorias'</code>: Busca todos os posts (<code>categories=*</code>)</p>
+</li>
+<li>
+<p>Outros casos: Filtra por categoria específica (<code>categories=*${categoryName}*</code>)</p>
+</li>
+</ul>
+<p><strong>URL para "Todas as categorias":</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="err">/api/dataentities/BP/search?categories=*&amp;_fields=imageCard,title,url,id,posttags,views,createdIn,categories,filters,videoIframe,useVideo</span>
+</span></code></pre></div>
+<p><strong>URL para categoria específica:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">/api/dataentities/BP/search?categories=*${categoryName}*&amp;_fields=imageCard,title,url,id,createdIn,categories,posttags,views,filters,videoIframe,useVideo</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getPostsByCategory</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">category</span><span class="o">?</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="nx">getPostsByCategory</span><span class="p">(</span><span class="nx">category</span><span class="p">.</span><span class="nx">name</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">setPosts</span><span class="p">);</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">category</span><span class="o">?</span><span class="p">.</span><span class="nx">name</span><span class="p">]);</span>
+</span></code></pre></div>
+<h3 id="patchincreasepostviews">patchIncreasePostViews</h3>
+<p><strong>Descrição:</strong> Incrementa o contador de visualizações de um post.</p>
+<p><strong>Endpoint:</strong> </p>
+<p><code>PATCH /api/dataentities/BP/documents/${id}</code></p>
+<p><strong>Body:</strong></p>
+<p>JSON com o novo valor de views</p>
+<p><strong>Parâmetros:</strong></p>
+<ul>
+<li><code>id</code> (string): ID do post</li>
+<li><code>views</code> (number): Número atual de visualizações</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise da requisição PATCH</li>
+</ul>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">patchIncreasePostViews</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="c1">// Supondo que você tenha um post com 100 visualizações</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="nx">patchIncreasePostViews</span><span class="p">(</span><span class="s1">&#39;post123&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">).</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Visualizações atualizadas&#39;</span><span class="p">);</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="getmostviewedpost">getMostViewedPost</h3>
+<p><strong>Descrição:</strong> Busca o post mais visualizado.</p>
+<p><strong>Parâmetros:</strong> Nenhum</p>
+<p><strong>Endpoint:</strong></p>
+<p><code>GET /api/dataentities/BP/search</code></p>
+<p><strong>Parâmetros de Query:</strong></p>
+<ul>
+<li>
+<p><code>_fields:</code> Campos específicos a retornar</p>
+</li>
+<li>
+<p><code>_sort:</code> Ordenação por views decrescente (<code>views DESC</code>)</p>
+</li>
+</ul>
+<p><strong>Retorno:</strong></p>
+<ul>
+<li>Promise contendo o post mais visualizado</li>
+</ul>
+<p><strong>URL Completa:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="s1">&#39;/api/dataentities/BP/search?_fields=id,url,views,title,description,imageDesktop,imageMobile,imageCard,brand,category,categories,posttags,collection,filters&amp;_sort=views DESC&#39;</span>
+</span></code></pre></div>
+<p><strong>Headers:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">{</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="s1">&#39;REST-Range&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;resources=0-1&#39;</span><span class="w"> </span><span class="c1">// Apenas o primeiro (mais visualizado)</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Exemplo de uso:</strong></p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getMostViewedPost</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./services/fetch&#39;</span><span class="p">;</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="nx">getMostViewedPost</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">post</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">post</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Post mais visualizado:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">post</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="p">});</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
