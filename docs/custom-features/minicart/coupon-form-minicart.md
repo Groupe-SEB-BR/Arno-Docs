@@ -2,7 +2,7 @@
 
 Esse componente React permite aplicar e remover um cupom no minicart, atualizando o orderForm (via useOrderForm) chamando a API pública de checkout, exibindo feedback de sucesso/erro e um spinner durante operações assíncronas.
 
-## Usage
+## Uso
 
 react/CustomFormMinicart.js
 
@@ -20,7 +20,7 @@ store/interfaces.json
   },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "toggle-layout#content-cupom-minicart": {

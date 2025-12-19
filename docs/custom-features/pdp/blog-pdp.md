@@ -2,7 +2,7 @@
 
 Esse componente é responsável por mostrar um dos posts do Blog Arno que seja relevante ao produto visualizado na página de produto
 
-## Usage
+## Uso
 
 react/BlogPDP.js
 
@@ -41,7 +41,7 @@ Cada objeto no array de `cards` deve ter as seguintes propriedades:
 | linkUrl   | string | No       | URL de destino do botão CTA      |
 | linkLabel | string | No       | Texto do botão CTA               |
 
-## Examples
+## Exemplos
 
 ```jsx
   "flex-layout.row#blog-pdp": {

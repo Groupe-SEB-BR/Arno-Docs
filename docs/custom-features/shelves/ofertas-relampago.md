@@ -6,7 +6,7 @@ Esse componente é reponsável pela vitrine de ofertas relâmpago, cada produto 
 
 Refatorar o código de ofertas relâmpago para não depender da vitrine de Black Friday. Criar um componente para vitrine customizada que possa ser reutilizado facilmente, e outro para ofertas relâmpago que possa ser usado em qualquer página.
 
-## Usage
+## Uso
 
 react/FlashSalesHome.js
 
@@ -52,7 +52,7 @@ Cada objeto no array de `activePromotions` deve ter as seguintes propriedades:
 | initialDate    | Date | Yes       | Data e horário inicial da oferta                        |
 | endDate | Date | Yes       | Data e horário final da oferta        |
 
-## Examples
+## Exemplos
 
 ```jsx
   "store.home": { 

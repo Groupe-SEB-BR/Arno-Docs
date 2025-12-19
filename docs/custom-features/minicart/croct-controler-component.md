@@ -2,7 +2,7 @@
 
  Este componente atua como um controlador de renderização condicional baseado em conteúdo dinâmico auxiliando o componente anterior apresentado (Custom Croct Popup).
 
-## Usage
+## Uso
 
 react/CroctControler.js
 

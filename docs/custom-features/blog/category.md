@@ -4,7 +4,7 @@ Esse componente lista todos os posts da categoria selecionada.
 
 ![image](../../assets/blog-category.png)
 
-## Usage
+## Uso
 
 react/Category.tsx
 
@@ -23,7 +23,7 @@ store/interfaces.json
 },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
 "store.custom#blog-category": {

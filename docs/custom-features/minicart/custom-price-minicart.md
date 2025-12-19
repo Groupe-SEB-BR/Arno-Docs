@@ -2,7 +2,7 @@
 
  Este componente não renderiza nada diretamente no Front da loja no minicart, ele atua fazendo calculos e sincronizando preços dentro do obejto orderForm da VTEX.
 
-## Usage
+## Uso
 
 react/ChangePriceMinicart.js
 
@@ -20,7 +20,7 @@ store/interfaces.json
   },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "minicart-base-content": {

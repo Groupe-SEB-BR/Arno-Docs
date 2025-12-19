@@ -33,6 +33,7 @@ nav:
     - Data Structure: custom-features/home/data-structure.md
     - Flash Sales: custom-features/home/flash-sales-home.md
     - Flash Sales: custom-features/shelves/ofertas-relampago.md
+  - Legado:
     - Custom Croct Popup: custom-features/minicart/custom-croct-popup.md
     - Croct Controler Component: custom-features/minicart/croct-controler-component.md
 theme:

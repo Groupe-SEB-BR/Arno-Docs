@@ -2,7 +2,7 @@
 
 Esse componente é responsável pelo conteúdo enriquecido injetado na página através do cadastro do produto no Catálogo da VTEX
 
-## Usage
+## Uso
 
 react/EnrichedContent.js
 
@@ -26,7 +26,7 @@ store/interfaces.json
 | Prop         | Type    | Required | Default | Description                                  |
 | children   | ReactNode  | No      |       | HTML com o conteúdo enriquecido |
 
-## Examples
+## Exemplos
 
 ```jsx
   "flex-layout.col#pdp-description": {

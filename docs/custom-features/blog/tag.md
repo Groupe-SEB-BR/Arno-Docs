@@ -4,7 +4,7 @@ Este componente renderiza os posts relacionados à tag atual do blog.
 
 ![image](../../assets/post-tag.png)
 
-## Usage
+## Uso
 
 react/Tag.tsx
 
@@ -22,7 +22,7 @@ store/interfaces.json
 },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
 "store.custom#blog-tag": {

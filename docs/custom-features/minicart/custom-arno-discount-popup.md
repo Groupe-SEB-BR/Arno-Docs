@@ -2,7 +2,7 @@
 
  Este componente mostra um resumo de descontos aplicados no mini-cart e permite abrir um modal com detalhes.
 
-## Usage
+## Uso
 
 react/DiscountDetailsPopup.js
 

@@ -9,7 +9,7 @@ Onde é possível configurar o componente com ID de coleção, título, descriç
 
 Refatorar o código de ofertas relâmpago para não depender da vitrine de Black Friday. Criar um componente para vitrine customizada que possa ser reutilizado facilmente, e outro para ofertas relâmpago que possa ser usado em qualquer página.
 
-## Usage
+## Uso
 
 react/FlashSalesHome.js
 
@@ -97,7 +97,7 @@ store/interfaces.json
     },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "store.home": { 

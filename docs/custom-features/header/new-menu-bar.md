@@ -4,7 +4,7 @@ Esse componente é usado para listar os menus de navegação das diferentes marc
 
 ![image](../../assets/new-menu-bar.jpg)
 
-## Usage
+## Uso
 
 react/NewMenuBar.js
 
@@ -23,7 +23,7 @@ store/interfaces.json
   },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "flex-layout.row#newmenu-bar": {

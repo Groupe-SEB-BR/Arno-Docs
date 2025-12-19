@@ -2,7 +2,7 @@
 
 Este componente exibe um pop-up com um cupom de desconto quando um cliente adiciona itens ao carrinho, após um período de tempo determinado.
 
-## Usage
+## Uso
 
 react/MinicartGiftBar.js
 
@@ -77,7 +77,7 @@ store/interfaces.json
     },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "flex-layout.row#content-giftbar-v2": {

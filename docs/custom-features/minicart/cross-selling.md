@@ -2,7 +2,7 @@
 
  O componente CrossSelling busca e exibe produtos relacionados (cross-selling) ao item que está no carrinho.
 
-## Usage
+## Uso
 
 react/CrossSelling.js
 
@@ -20,7 +20,7 @@ store/interfaces.json
   },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "minicart-base-content": {

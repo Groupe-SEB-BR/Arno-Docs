@@ -4,7 +4,7 @@ Esse componente é usado para informar ao usuário sobre promoções e listar o 
 
 ![image](../../assets/top-black-bar.jpg)
 
-## Usage
+## Uso
 
 react/TopBlackBar.js
 
@@ -23,7 +23,7 @@ store/interfaces.json
   },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "flex-layout.row#topblack-bar": {

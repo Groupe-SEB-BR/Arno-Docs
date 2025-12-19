@@ -4,7 +4,7 @@ Esse componente √© usado para adicionar um CTA ao header, que redireciona o usu√
 
 ![image](../../assets/black-button.png)
 
-## Usage
+## Uso
 
 react/BlackButton.js
 
@@ -22,7 +22,7 @@ store/interfaces.json
   },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "flex-layout.row#black-btn-container": {

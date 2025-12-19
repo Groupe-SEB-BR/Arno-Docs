@@ -4,7 +4,7 @@ Esse componente mostra uma vitrine de até 4 cards com informações promocionai
 
 ![image](../../assets/special-selection.png)
 
-## Usage
+## Uso
 
 react/SpecialSelection.js
 
@@ -43,7 +43,7 @@ Cada objeto no array de `cards` deve ter as seguintes propriedades:
 | linkUrl     | string | No      | URL de destino do botão CTA           |
 | linkLabel | string | No       | Texto do botão CTA                    |
 
-## Examples
+## Exemplos
 
 ```jsx
   "store.home": {

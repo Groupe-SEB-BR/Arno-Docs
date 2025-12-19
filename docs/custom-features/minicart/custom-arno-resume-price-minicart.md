@@ -2,7 +2,7 @@
 
  O componente React que mostra um resumo de preços no minicart (subtotal, descontos, entrega, total à vista no PIX e parcelamento).
 
-## Usage
+## Uso
 
 react/ResumePriceMinicart.js
 
@@ -20,7 +20,7 @@ store/interfaces.json
   },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
   "flex-layout.col#minicart-footer": {

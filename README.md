@@ -25,19 +25,19 @@ mkdocs serve --livereload
 
 Visit `http://127.0.0.1:8000` in your browser.
 
-### Building the Site
+### Publishing the site on GitHub  
 
-To build the static site:
+To build the static site for GitHub Pages:
 
 ```bash
-mkdocs build
+mkdocs gh-deploy --force
 ```
 
 The built site will be in the `site/` directory.
 
 ## Project Structure
 
-```
+```text
 arno-doc/
 ├── docs/           # Documentation source files
 ├── mkdocs.yml      # MkDocs configuration

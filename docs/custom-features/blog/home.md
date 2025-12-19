@@ -4,7 +4,7 @@ Este componente renderiza a página inicial do blog com banner, categorias, abas
 
 ![image](../../assets/blog-home.png)
 
-## Usage
+## Uso
 
 react/Home.tsx
 
@@ -22,7 +22,7 @@ store/interfaces.json
 },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
 "store.custom#blog-home": {

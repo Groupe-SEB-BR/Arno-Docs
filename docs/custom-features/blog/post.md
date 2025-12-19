@@ -4,7 +4,7 @@ Esse componente renderiza o conteúdo do post selecionado baseado na URL.
 
 ![image](../../assets/blog-post.png)
 
-## Usage
+## Uso
 
 react/Post.tsx
 
@@ -22,7 +22,7 @@ store/interfaces.json
 },
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
 "store.custom#blog-post": {

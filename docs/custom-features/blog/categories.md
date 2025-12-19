@@ -4,7 +4,7 @@ Esse componente lista todas as categorias cadastradas, independentemente se tive
 
 ![image](../../assets/categorias.png)
 
-## Usage
+## Uso
 
 react/Categories.tsx
 
@@ -22,7 +22,7 @@ store/interfaces.json
 }
 ```
 
-## Examples
+## Exemplos
 
 ```jsx
 "store.custom#blog-categories": {
