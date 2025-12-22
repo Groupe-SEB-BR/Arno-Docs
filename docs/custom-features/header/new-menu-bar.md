@@ -1,15 +1,13 @@
-# Menu Bar
+# New Menu Bar
 
-Esse componente é usado para listar os menus de navegação das diferentes marcas do site, em telas maiores que 1024 pixels de largura.
-
-![image](../../assets/new-menu-bar.jpg)
+Componente para exibir uma barra de menu superior com suporte multi-brand (Arno, Rochedo, Tefal) com detecção automática de URL.
 
 ## Uso
 
-react/NewMenuBar.js
+react/NewMenuBar.tsx
 
 ```jsx
-import NewMenuBar from './components/MenuMultiBranding/NewMenuBar';
+import NewMenuBar from "./components/MenuMultiBranding/NewMenuBar";
 
 export default NewMenuBar;
 ```
@@ -17,55 +15,131 @@ export default NewMenuBar;
 store/interfaces.json
 
 ```json
-  "newmenu": {
-    "component": "NewMenuBar",
-    "render": "lazy"
-  },
+"newmenu": {
+  "component": "NewMenuBar",
+  "render": "lazy"
+},
 ```
 
 ## Exemplos
 
 ```jsx
-  "flex-layout.row#newmenu-bar": {
-    "children": ["newmenu"],
-    "props": {
-      "verticalAlign": "center",
-      "blockClass": ["newmenubar"]
-    }
-  },
+"flex-layout.row#newmenu-bar": {
+  "children": ["newmenu"],
+  "props": {
+    "verticalAlign": "center",
+    "blockClass": ["newmenubar"]
+  }
+},
 ```
 
-# Props do Componente NewMenuBar
+## Funcionalidades
 
-| Prop              | Tipo      | Obrigatório? | Descrição                      | Valor Padrão |
-| ----------------- | --------- | ------------ | ------------------------------ | ------------ |
-| **activeArno**    | `boolean` | Não          | Ativa o Black Button Arno      | `true`       |
-| **activeCroct**   | `boolean` | Não          | Ativa a integração com a Croct | `false`      |
-| **iconArno**      | `string`  | Não          | Ícone do Black Button Arno     | -            |
-| **linkArno**      | `string`  | Não          | Link do Black Button Arno      | -            |
-| **textArno**      | `string`  | Não          | Texto do Black Button Arno     | -            |
-| **activeRochedo** | `boolean` | Não          | Ativa o Black Button Rochedo   | `true`       |
-| **iconRochedo**   | `string`  | Não          | Ícone do Black Button Rochedo  | -            |
-| **linkRochedo**   | `string`  | Não          | Link do Black Button Rochedo   | -            |
-| **textRochedo**   | `string`  | Não          | Texto do Black Button Rochedo  | -            |
-| **activeTefal**   | `boolean` | Não          | Ativa o Black Button Tefal     | `true`       |
-| **iconTefal**     | `string`  | Não          | Ícone do Black Button Tefal    | -            |
-| **linkTefal**     | `string`  | Não          | Link do Black Button Tefal     | -            |
-| **textTefal**     | `string`  | Não          | Texto do Black Button Tefal    | -            |
+### Menu Multi-Brand
+
+O componente exibe diferentes menus baseado na URL:
+
+- **Arno**: Menu padrão para URLs contendo "arno", homepage ou URLs não reconhecidas
+- **Rochedo/Clock**: Menu específico para URLs contendo "rochedo" ou "clock"
+- **Tefal**: Menu específico para URLs contendo "tefal"
+- **Detecção Automática**: Identifica a marca pela URL atual
+- **Integração Croct**: Suporte opcional para personalização via Croct
+
+## Estrutura de Dados
+
+### Propriedades do Componente
+
+```typescript
+{
+  activeArno: boolean,          // Ativa menu Arno
+  activeCroct: boolean,         // Ativa integração Croct
+  iconArno: string,             // Ícone do botão Arno
+  linkArno: string,             // URL do botão Arno
+  textArno: string,             // Texto do botão Arno
+  activeRochedo: boolean,       // Ativa menu Rochedo
+  iconRochedo: string,          // Ícone do botão Rochedo
+  linkRochedo: string,          // URL do botão Rochedo
+  textRochedo: string,          // Texto do botão Rochedo
+  activeTefal: boolean,         // Ativa menu Tefal
+  iconTefal: string,            // Ícone do botão Tefal
+  linkTefal: string,            // URL do botão Tefal
+  textTefal: string             // Texto do botão Tefal
+}
+```
+
+## Configuração via Schema
+
+```typescript
+{
+  activeCroct: {
+    type: 'boolean',
+    title: 'Ativar integração com a Croct',
+    default: false
+  },
+  activeArno: {
+    type: 'boolean',
+    title: 'Ativar Black Button Arno',
+    default: true
+  },
+  iconArno: {
+    title: 'Ícone do Black Button Arno',
+    type: 'string'
+  },
+  linkArno: {
+    title: 'Link do Black Button Arno',
+    type: 'string'
+  },
+  textArno: {
+    title: 'Texto do Black Button Arno',
+    type: 'string'
+  },
+  activeRochedo: {
+    type: 'boolean',
+    title: 'Ativar Black Button Rochedo',
+    default: true
+  },
+  iconRochedo: {
+    title: 'Ícone do Black Button Rochedo',
+    type: 'string'
+  },
+  linkRochedo: {
+    title: 'Link do Black Button Rochedo',
+    type: 'string'
+  },
+  textRochedo: {
+    title: 'Texto do Black Button Rochedo',
+    type: 'string'
+  },
+  activeTefal: {
+    type: 'boolean',
+    title: 'Ativar Black Button Tefal',
+    default: true
+  },
+  iconTefal: {
+    title: 'Ícone do Black Button Tefal',
+    type: 'string'
+  },
+  linkTefal: {
+    title: 'Link do Black Button Tefal',
+    type: 'string'
+  },
+  textTefal: {
+    title: 'Texto do Black Button Tefal',
+    type: 'string'
+  }
+}
+```
+
+## Dependências
+
+- `react`: Hooks (useState, useEffect)
+- `ArnoMenu`, `RochedoMenu`, `TefalMenu`: Componentes de menu específicos
+- `./style.css`: Estilos do componente
 
 ## Observações
 
-1. Todos os props são **opcionais**, pois não há validação de tipos obrigatórios no código
-2. Os valores padrão são definidos no schema do componente
-3. O componente também recebe implicitamente `activeCroct` que é passado para os subcomponentes `ArnoMenu`, `RochedoMenu` e `TefalMenu`
-4. A lógica de exibição é baseada na URL atual, determinando qual menu (Arno, Rochedo ou Tefal) será exibido
-
-## Funcionamento do Componente
-
-O componente `NewMenuBar` analisa a URL atual para decidir qual menu mostrar:
-
-- **Arno Menu**: Mostrado quando a URL contém "arno", é a página inicial (`/`), ou não contém nenhuma das palavras-chave (arno, rochedo, clock, tefal)
-- **Rochedo Menu**: Mostrado quando a URL contém "rochedo" ou "clock"
-- **Tefal Menu**: Mostrado quando a URL contém "tefal"
-
-O componente usa o estado interno para controlar qual menu está visível com base na URL.
+1. Detecção de URL ocorre no mount do componente
+2. Suporta regex para identificação de padrões de URL
+3. Todos os textos, ícones e links são configuráveis via Site Editor
+4. Integração Croct é opcional via propriedade `activeCroct`
+5. Menu Arno é exibido como padrão para URLs não reconhecidas

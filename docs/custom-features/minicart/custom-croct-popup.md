@@ -1,85 +1,89 @@
-# Custom Croct Popup
+# Minicart Checker Popup
 
- Este componente exibe um pop-up com um cupom de desconto quando um cliente adiciona itens ao carrinho, após um período de tempo determinado.
+Componente que monitora alterações no carrinho e exibe um popup com cupom de desconto após um período configurável. Ideal para capturar a atenção do usuário após adicionar produtos ao carrinho.
 
 ## Uso
 
-react/CroctPopUp.js
+```javascript
+import MinicartChecker from './components/MinicartChecker';
+
+export default MinicartChecker;
+```
+
+```json
+"custom-arno-minicart-checker": {
+  "component": "MinicartChecker"
+}
+```
+
+## Exemplo
 
 ```jsx
-import CroctPopUp from './components/CroctPopUp/index';
-
-export default CroctPopUp;
+"minicart": {
+  "blocks": ["minicart-base-content"],
+  "children": ["custom-arno-minicart-checker"]
+}
 ```
 
-store/interfaces.json
-```json
-  "custom-croct-popup": {
-    "component": "CroctPopUp",
-    "composition": "children"
-  },
-```
+## Funcionalidades
+
+### Monitoramento de Carrinho
+
+- Detecta adição de novos itens ao carrinho
+- Verifica alterações a cada 5 segundos
+- Limpa timers anteriores ao detectar novo item
+
+### Responsividade
+
+- Detecção automática de mobile (≤1024px)
+- Imagens e cupons específicos por device
+- Redimensionamento em tempo real
+
+### Popup com Cupom
+
+- Overlay customizável por device
+- Botão de fechamento
+- Cópia de cupom para clipboard
+- Feedback ao usuário via alert
 
 ## Props
 
-| Prop | Type | Required | Default | Description |
-|------|------|----------|---------|-------------|
-| desktopImage | string | Yes | false | Imagem para o Desktop |
-| mobileImage | string | Yes | array | Imagem para o Mobile |
-| displayMinutes | number | Yes | 1 | Tempo de exibição (minutos)  |
-| desktopCoupon | string | Yes | false | Cupom Desktop |
-| mobileCoupon | string | Yes | false | Cupom Mobile |
+| Prop             | Tipo   | Descrição                                |
+| ---------------- | ------ | ---------------------------------------- |
+| `desktopImage`   | string | URL da imagem exibida em desktop         |
+| `mobileImage`    | string | URL da imagem exibida em mobile          |
+| `displayMinutes` | number | Tempo (em minutos) antes de exibir popup |
+| `desktopCoupon`  | string | Código do cupom para desktop             |
+| `mobileCoupon`   | string | Código do cupom para mobile              |
 
-### Schema
-```json
-  title: 'Minicart Checker',
-    description: 'Componente para exibir pop-up com cupom e imagens.',
-    type: 'object',
-    properties: {
-      desktopImage: {
-        title: 'Imagem Desktop',
-        type: 'string',
-        widget: {
-          'ui:widget': 'image-uploader',
-        },
-      },
-      mobileImage: {
-        title: 'Imagem Mobile',
-        type: 'string',
-        widget: {
-          'ui:widget': 'image-uploader',
-        },
-      },
-      displayMinutes: {
-        title: 'Tempo de exibição (minutos)',
-        type: 'number',
-        default: 1,
-      },
-      desktopCoupon: {
-        title: 'Cupom Desktop',
-        type: 'string',
-        default: 'VOLTA5',
-      },
-      mobileCoupon: {
-        title: 'Cupom Mobile',
-        type: 'string',
-        default: 'VOLTA5',
-      },
-    },
-```
+## Dependências
 
-## Exemplos
+- `react`: Hooks `useEffect`, `useState`
+- `prop-types`: Validação de props
+- `vtex.order-manager/OrderForm`: Hook `useOrderForm`
+- `./style.css`: Estilos customizados
 
-```jsx
-  "flex-layout.row#mainContent-desk-croct-popup": {
-    "title": "Croct Pop-up Desktop",
-    "children": ["custom-croct-popup"],
-    "props": {
-      "blockClass": "mainContent-desk-croct-popup"
-    }
-  }
-```
+## Estados Gerenciados
 
-## Notes
+- `previousItems`: Snapshot anterior de itens do carrinho
+- `showPopup`: Controla visibilidade do popup
+- `timerId`: ID do timeout para delay de exibição
+- `isMobile`: Flag de detecção de dispositivo
 
-Additional information, gotchas, or important considerations when using this component.
+## Comportamento
+
+1. Monitora mudanças no `orderForm` a cada 5 segundos
+2. Detecta quando novo item é adicionado ao carrinho
+3. Aguarda `displayMinutes` minutos antes de exibir popup
+4. Popup é responsivo baseado no tamanho da tela
+5. Clique no overlay (fora do popup) fecha o componente
+6. Clique na imagem copia o cupom para clipboard
+7. Botão "X" fecha o popup manualmente
+
+## Observações
+
+1. Popup só renderiza quando `showPopup` é true
+2. Timer é limpo ao adicionar novo item
+3. Event listener de resize é removido ao desmontar
+4. Cupom é copiado automaticamente ao clicar na imagem
+5. Alert confirma sucesso na cópia do cupom

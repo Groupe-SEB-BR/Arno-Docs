@@ -1,12 +1,10 @@
-# Black Bar
+# Black Button
 
-Esse componente é usado para adicionar um CTA ao header, que redireciona o usuário à campanhas ativas no site. Normalmente ele leva a páginas de coleção ou landing pages. O texto e url são editáveis através do [Site Editor](https://help.vtex.com/pt/docs/tutorials/site-editor-visao-geral) da VTEX.
-
-![image](../../assets/black-button.png)
+Componente para exibir um botão preto configurável com suporte a integração Croct para personalização dinâmica.
 
 ## Uso
 
-react/BlackButton.js
+react/BlackButton.tsx
 
 ```jsx
 import BlackButton from './components/MenuMultiBranding/BlackButton';
@@ -17,57 +15,85 @@ export default BlackButton;
 store/interfaces.json
 
 ```json
-  "arno-black-button": {
-    "component": "BlackButton"
-  },
+"arno-black-button": {
+  "component": "BlackButton"
+},
 ```
 
 ## Exemplos
 
 ```jsx
-  "flex-layout.row#black-btn-container": {
-    "props": {
-      "blockClass": "black-btn-container"
-    },
-    "children": ["arno-black-button"]
-  }
+"flex-layout.row#black-btn-container": {
+  "props": {
+    "blockClass": "black-btn-container"
+  },
+  "children": ["arno-black-button"]
+}
 ```
 
-## Props do Componente BlackButton
+## Funcionalidades
 
-| Prop            | Tipo      | Obrigatório? | Descrição                      | Valor Padrão        |
-| --------------- | --------- | ------------ | ------------------------------ | ------------------- |
-| **active**      | `boolean` | Não          | Ativa/desativa o Black Button  | `true`              |
-| **activeCroct** | `boolean` | Não          | Ativa a integração com a Croct | `false`             |
-| **icon**        | `string`  | Não          | Ícone do Black Button          | `''` (string vazia) |
-| **link**        | `string`  | Não          | Link do Black Button           | `''` (string vazia) |
-| **text**        | `string`  | Não          | Texto do Black Button          | `''` (string vazia) |
+### Botão Preto Configurável
+
+O componente exibe um botão preto com:
+
+- **Ícone Dinâmico**: Imagem configurável ou vazia
+- **Texto Personalizável**: Texto do botão via props ou Croct
+- **Link Configurável**: URL do botão
+- **Integração Croct**: Busca conteúdo dinamicamente
+- **Rastreamento**: Registra cliques de usuários
+
+## Estrutura de Dados
+
+### Propriedades do Componente
+
+```typescript
+{
+  active: boolean,           // Ativa/desativa o botão
+  activeCroct: boolean,      // Habilita integração Croct
+  icon: string,              // URL da imagem do ícone
+  link: string,              // URL do botão
+  text: string               // Texto do botão
+}
+```
+
+## Configuração via Schema
+
+```typescript
+{
+  active: {
+    type: 'boolean',
+    title: 'Ativar Black Button',
+    default: true
+  },
+  activeCroct: {
+    type: 'boolean',
+    title: 'Ativar integração com a Croct',
+    default: false
+  },
+  icon: {
+    title: 'Ícone do Black Button',
+    type: 'string'
+  },
+  link: {
+    title: 'Link do Black Button',
+    type: 'string'
+  },
+  text: {
+    title: 'Texto do Black Button',
+    type: 'string'
+  }
+}
+```
+
+## Dependências
+
+- `react`: Componente funcional com hooks
+- `croct`: Integração para personalização dinâmica
 
 ## Observações
 
-1. Todos os props são **opcionais** e possuem valores padrão definidos na desestruturação
-2. Quando `activeCroct` é `true`, o componente busca os dados (ícone, link, texto) da API da Croct
-3. Se houver erro na integração com a Croct, o componente usa os valores passados via props
-4. O componente rastreia cliques via Croct quando `activeCroct` está ativado
-
-## Funcionamento do Componente
-
-O componente `BlackButton` possui duas fontes de dados:
-
-### 1. Modo VTEX (padrão)
-
-- Usa os valores passados diretamente via props (`icon`, `link`, `text`)
-- Ativado quando `activeCroct = false`
-
-### 2. Modo Croct
-
-- Ativado quando `activeCroct = true`
-- Busca dados da API da Croct usando `croct.fetch('black-button')`
-- Sobrescreve os valores das props com os dados da Croct
-- Rastreia cliques com `croct.track('goalCompleted')`
-
-### Comportamento
-
-- Se `active = false`, o botão não é renderizado
-- O clique é rastreado apenas no modo Croct
-- Em caso de erro na API Croct, retorna ao modo VTEX automaticamente
+1. Quando `activeCroct` é true, o componente busca dados da Croct
+2. Em caso de erro na Croct, usa valores padrão (VTEX)
+3. Cliques são rastreados apenas para conteúdo Croct
+4. Estilos definidos em `./style.css`

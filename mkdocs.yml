@@ -5,6 +5,7 @@ nav:
     - Menu Bar: custom-features/header/new-menu-bar.md
     - Black Button: custom-features/header/black-button.md
   - Home:
+    - Custom Croct Popup: custom-features/minicart/custom-croct-popup.md
     - Popup: custom-features/home/home-popup.md
     - Slider Hero: custom-features/home/slider-hero.md
     - Main Categories: custom-features/home/main-categories.md
@@ -14,11 +15,12 @@ nav:
   - PDP:
     - Blog Post: custom-features/pdp/blog-pdp.md
     - Enriched Content: custom-features/pdp/enriched-content.md
+    - Redirect to Reviews: custom-features/pdp/redirect-reviews.md
   - Minicart:
     - Gift Bar: custom-features/minicart/arno-minicart-giftbar.md
     - Coupon Form: custom-features/minicart/coupon-form-minicart.md
     - Price Resume: custom-features/minicart/custom-arno-resume-price-minicart.md
-    - Custom Price: custom-features/minicart/custom-price-minicart.md
+    - Custom Price: custom-features/minicart/change-price-minicart.md
     - Cross Selling: custom-features/minicart/cross-selling.md
     - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
   - Blog:
@@ -28,13 +30,15 @@ nav:
     - Blog Category: custom-features/blog/category.md
     - Blog Post: custom-features/blog/post.md
     - Blog Tag: custom-features/blog/tag.md
+  - Checkout:
+    - Awin Cookies: custom-features/checkout/awin-cookies.md
+    - Awin Conversion: custom-features/checkout/awin-conversion.md
   - Global Features:
     - Meta Tags: custom-features/home/meta-tags.md
     - Data Structure: custom-features/home/data-structure.md
     - Flash Sales: custom-features/home/flash-sales-home.md
     - Flash Sales: custom-features/shelves/ofertas-relampago.md
   - Legado:
-    - Custom Croct Popup: custom-features/minicart/custom-croct-popup.md
     - Croct Controler Component: custom-features/minicart/croct-controler-component.md
 theme:
   name: material

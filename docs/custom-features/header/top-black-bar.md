@@ -1,12 +1,10 @@
-# Black Bar
+# Top Black Bar
 
-Esse componente é usado para informar ao usuário sobre promoções e listar o link do blog de Arno na versão Desktop. Ele é posicionado como o primeiro componente em todas as páginas do site. O conteúdo é editável pelo Site Editor da VTEX.
-
-![image](../../assets/top-black-bar.jpg)
+Componente para exibir a barra preta superior com links configuráveis na página inicial.
 
 ## Uso
 
-react/TopBlackBar.js
+react/TopBlackBar.tsx
 
 ```jsx
 import TopBlackBar from './components/MenuMultiBranding/TopBlackBar';
@@ -17,61 +15,107 @@ export default TopBlackBar;
 store/interfaces.json
 
 ```json
-  "topblack-bar": {
-    "component": "TopBlackBar",
-    "render": "lazy"
-  },
+"topblack-bar": {
+  "component": "TopBlackBar",
+  "render": "lazy"
+},
 ```
 
 ## Exemplos
 
 ```jsx
-  "flex-layout.row#topblack-bar": {
-    "title": "Top BlackBar",
-    "children": ["topblack-bar"],
-    "props": {
-      "verticalAlign": "center",
-      "horizontalAlign": "center",
-      "blockClass": ["topblackbar"]
-    }
+"flex-layout.row#header-mobile": {
+  "children": [
+    "topblack-bar",
+    "multibranding-menu",
+    "flex-layout.row#searchbar-mob"
+  ],
+  "props": {
+    "blockClass": "main-header-mobile",
+    "preserveLayoutOnMobile": true,
+    "horizontalAlign": "center",
+    "verticalAlign": "middle",
+    "fullWidth": true
   }
+},
 ```
 
-## Props do Componente TopBlackBar
+## Funcionalidades
 
-| Prop                  | Tipo     | Obrigatório? | Descrição                  | Valor Padrão                                                  |
-| --------------------- | -------- | ------------ | -------------------------- | ------------------------------------------------------------- |
-| **blogLink**          | `string` | Não          | Link para o blog           | `'/blog'`                                                     |
-| **blogText**          | `string` | Não          | Texto do link do blog      | `'Blog Arno.com'`                                             |
-| **bonusText**         | `string` | Não          | Texto do link de bônus     | `''` (string vazia)                                           |
-| **bonusLink**         | `string` | Não          | Link para resgate de bônus | `''` (string vazia)                                           |
-| **officialStoreText** | `string` | Não          | Texto da loja oficial      | `'Loja oficial • Tudo em até 6x sem juros • Desconto no PIX'` |
+### Barra Superior Configurável
+
+O componente exibe uma barra preta com:
+
+- **Texto da Loja Oficial**: Mensagem personalizável sobre a loja
+- **Links Dinâmicos**: Blog e Bônus com URLs configuráveis
+- **Responsivo**: Adapta-se a diferentes tamanhos de tela
+- **Abertura em Nova Aba**: Links abrem em `target="_blank"`
+
+## Estrutura de Dados
+
+### Propriedades do Componente
+
+```typescript
+{
+  blogLink: string,           // URL do blog
+  blogText: string,           // Texto do link do blog
+  bonusText: string,          // Texto do link de bônus
+  bonusLink: string,          // URL de resgate de bônus
+  officialStoreText: string   // Texto da loja oficial
+}
+```
+
+## Configuração via Schema
+
+### Propriedades Principais
+
+```typescript
+{
+  blogLink: {
+    title: 'Link do Blog',
+    type: 'string',
+    default: '/blog'
+  },
+  blogText: {
+    title: 'Texto do Blog',
+    type: 'string',
+    default: 'Blog Arno.com'
+  },
+  bonusText: {
+    title: 'Texto do Bônus',
+    type: 'string',
+    default: 'Resgate seu bônus'
+  },
+  bonusLink: {
+    title: 'Link do Bônus',
+    type: 'string',
+    default: '/resgate-seu-bonus'
+  },
+  officialStoreText: {
+    title: 'Texto da Loja Oficial',
+    type: 'string',
+    default: 'Loja oficial • Tudo em até 6x sem juros • Desconto no PIX'
+  }
+}
+```
+
+## Estrutura de Classes CSS
+
+- `.black-bar`: Container principal da barra
+- `.black-bar-content`: Conteúdo interno
+- `.white-text`: Texto branco
+- `.white-text-space`: Espaçador
+- `.links`: Container dos links
+- `.white-link`: Estilo dos links
+
+## Dependências
+
+- `react`: Componente funcional
+- `prop-types`: Validação de props
 
 ## Observações
 
-1. Todos os props são **opcionais** e possuem valores padrão definidos em `defaultProps`
-2. O componente exibe uma barra preta superior com links configuráveis
-3. Os links abrem em nova aba (`target="_blank"`)
-4. Há um espaço reservado vazio (`white-text-space`) antes do texto da loja oficial
-
-## Comportamento
-
-- O texto da loja oficial é exibido sempre (usa valor padrão se não fornecido)
-- O link de bônus só aparece se `bonusText` e `bonusLink` forem fornecidos
-- O link do blog só aparece se `blogText` e `blogLink` forem fornecidos
-- Todos os links abrem em nova aba do navegador
-
-## Valores Padrão
-
-Os valores padrão são definidos de duas formas:
-
-1. No schema do componente (para fins de documentação)
-2. Em `defaultProps` (valores reais usados pelo React)
-
-**Nota:** Há uma inconsistência nos valores padrão entre o schema e `defaultProps`:
-
-- `bonusText`: No schema tem `'Resgate seu bônus'`, mas em `defaultProps` é `''`
-- `bonusLink`: No schema tem `'/resgate-seu-bonus'`, mas em `defaultProps` é `''`
-- `blogText`: No schema tem `'Blog Arno.com'`, e em `defaultProps` também
-
-O React usará os valores de `defaultProps` quando os props não forem fornecidos.
+1. Todos os textos e links são configuráveis via Site Editor
+2. Links abrem em nova aba automaticamente
+3. Suporta valores vazios para textos opcionais
+4. Estilos definidos em `./style.css`
