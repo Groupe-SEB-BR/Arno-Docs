@@ -17,6 +17,8 @@ nav:
     - Shelf Lancamentos: custom-features/home/shelf-lancamentos.md
     - Special Selection: custom-features/home/special-selection.md
   - PDP:
+    - Send Event: custom-features/pdp/send-event-pdp.md
+    - Comparator: custom-features/pdp/comparator.md
     - Blog Post: custom-features/pdp/blog-pdp.md
     - Enriched Content: custom-features/pdp/enriched-content.md
     - Redirect to Reviews: custom-features/pdp/redirect-reviews.md

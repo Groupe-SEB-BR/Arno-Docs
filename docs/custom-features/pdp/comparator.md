@@ -2,6 +2,8 @@
 
 Este componente exibe uma lista de produtos para comparação na página de detalhes do produto (PDP), filtrando produtos da mesma categoria e excluindo kits.
 
+![image](../../assets/comparador.png)
+
 ## Uso
 
 react/CompareProductsV2.js

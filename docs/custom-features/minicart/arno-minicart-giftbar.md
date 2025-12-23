@@ -2,6 +2,8 @@
 
 Este componente exibe uma barra de progresso no minicart com metas de frete grátis e brinde, mostrando o progresso da compra em relação aos valores estabelecidos.
 
+![image](../../assets/frete-gratis.png)
+
 ## Uso
 
 react/MinicartGiftBar.js
