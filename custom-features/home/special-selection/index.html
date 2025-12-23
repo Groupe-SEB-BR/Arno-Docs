@@ -12,7 +12,7 @@
         <link rel="prev" href="../shelf-lancamentos/">
       
       
-        <link rel="next" href="../../pdp/blog-pdp/">
+        <link rel="next" href="../../pdp/send-event-pdp/">
       
       
         
@@ -62,10 +62,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="arno" data-md-color-primary="custom" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -118,7 +120,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -163,6 +191,18 @@
       
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/Groupe-SEB-BR/Arno-Store" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Arno-Store
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -196,6 +236,18 @@
     </a>
     Arno Store
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Groupe-SEB-BR/Arno-Store" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Arno-Store
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -245,6 +297,62 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../header/meta-tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../header/data-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -341,6 +449,88 @@
       
   
   
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Account
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Account
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account/script-yami/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Script Yami
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -354,10 +544,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -375,8 +565,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -393,14 +583,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../home-popup/" class="md-nav__link">
+      <a href="../custom-croct-popup/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Popup
+    Custom Croct Popup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../newsletter-popup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Newsletter Popup
   
 
     
@@ -593,10 +811,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
+  <a href="#uso" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Usage
+        Uso
       
     </span>
   </a>
@@ -604,22 +822,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#props" class="md-nav__link">
+  <a href="#exemplos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Props
+        Exemplos
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Props">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funcionalidades
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcionalidades">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#props-de-cards" class="md-nav__link">
+  <a href="#cards-personalizaveis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Props de "cards"
+        Cards Personalizáveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-adaptativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layout Adaptativo
       
     </span>
   </a>
@@ -632,10 +883,116 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#estrutura-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Examples
+        Estrutura de Dados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propriedades-do-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propriedades do Componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comportamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comportamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comportamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renderizacao-condicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Renderização Condicional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navegacao-com-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegação com Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-condicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layout Condicional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-via-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuração via Schema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuração via Schema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propriedades-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propriedades Principais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-de-classes-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura de Classes CSS
       
     </span>
   </a>
@@ -643,10 +1000,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#configuracao-do-slider" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Notes
+        Configuração do Slider
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observações
       
     </span>
   </a>
@@ -684,10 +1063,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -705,8 +1084,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -715,6 +1094,62 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdp/send-event-pdp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Send Event
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdp/comparator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -772,6 +1207,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdp/redirect-reviews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redirect to Reviews
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -794,10 +1257,92 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Search
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Search
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../search/meta-tags-categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta Tags Categories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -815,8 +1360,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -917,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../minicart/custom-price-minicart/" class="md-nav__link">
+      <a href="../../minicart/change-price-minicart/" class="md-nav__link">
         
   
   
@@ -966,34 +1511,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../minicart/custom-arno-discount-popup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Custom Arno Discount Popup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1016,10 +1533,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1037,8 +1554,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1238,17 +1755,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Global Features
+    Institutional
   
 
     
@@ -1259,12 +1776,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Global Features
+    Institutional
   
 
           </label>
@@ -1277,14 +1794,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../meta-tags/" class="md-nav__link">
+      <a href="../../institutional/venda-corporativa-form/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Meta Tags
+    Vendas Corporativas
   
 
     
@@ -1305,14 +1822,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-structure/" class="md-nav__link">
+      <a href="../../institutional/black-friday-2025/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Data Structure
+    Black Friday 2025
   
 
     
@@ -1326,21 +1843,39 @@
 
               
             
-              
-                
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../flash-sales-home/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
     
   
-    Flash Sales
+    Shelves
   
 
     
@@ -1348,11 +1883,19 @@
   
   
 
-      </a>
-    </li>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Shelves
   
 
-              
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1368,7 +1911,89 @@
   <span class="md-ellipsis">
     
   
-    Flash Sales
+    Ofertas Relâmpago
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkout
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Checkout
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../checkout/awin-cookies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Awin Cookies
   
 
     
@@ -1389,14 +2014,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../minicart/custom-croct-popup/" class="md-nav__link">
+      <a href="../../checkout/awin-conversion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Custom Croct Popup
+    Awin Conversion
   
 
     
@@ -1417,14 +2042,96 @@
   
   
     <li class="md-nav__item">
-      <a href="../../minicart/croct-controler-component/" class="md-nav__link">
+      <a href="../../checkout/checkout-ui-custom/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Croct Controler Component
+    Checkout UI Custom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Global
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../global/pixel-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pixel APP
   
 
     
@@ -1472,10 +2179,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
+  <a href="#uso" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Usage
+        Uso
       
     </span>
   </a>
@@ -1483,22 +2190,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#props" class="md-nav__link">
+  <a href="#exemplos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Props
+        Exemplos
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Props">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funcionalidades
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcionalidades">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#props-de-cards" class="md-nav__link">
+  <a href="#cards-personalizaveis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Props de "cards"
+        Cards Personalizáveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-adaptativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layout Adaptativo
       
     </span>
   </a>
@@ -1511,10 +2251,116 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#estrutura-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Examples
+        Estrutura de Dados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propriedades-do-componente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propriedades do Componente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comportamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comportamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comportamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renderizacao-condicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Renderização Condicional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navegacao-com-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegação com Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-condicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layout Condicional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-via-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuração via Schema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuração via Schema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propriedades-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propriedades Principais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-de-classes-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura de Classes CSS
       
     </span>
   </a>
@@ -1522,10 +2368,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#configuracao-do-slider" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Notes
+        Configuração do Slider
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observações
       
     </span>
   </a>
@@ -1548,116 +2416,148 @@
                   
 
 
+  
+  
+
 
 <h1 id="special-selection">Special Selection</h1>
-<p>Esse componente mostra uma vitrine de até 4 cards com informações promocionais da loja, com imagens e botões CTA.</p>
-<p><img alt="image" src="../../../assets/special-selection.png" /></p>
-<h2 id="usage">Usage</h2>
+<p>Este componente exibe uma seleção especial de cards com imagens, títulos e links na página inicial, com suporte a slider no mobile e tracking de cliques via Google Analytics.</p>
+<p><img alt="image" src="../../../assets/selecao-especial.png" /></p>
+<h2 id="uso">Uso</h2>
 <p>react/SpecialSelection.js</p>
 <div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">SpecialSelection</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./components/SpecialSelection&#39;</span><span class="p">;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">SpecialSelection</span><span class="p">;</span>
 </span></code></pre></div>
 <p>store/interfaces.json</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">  </span><span class="nt">&quot;custom-arno-special-selection&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&quot;component&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SpecialSelection&quot;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="p">},</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">&quot;custom-arno-special-selection&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;component&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SpecialSelection&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">},</span>
 </span></code></pre></div>
-<h2 id="props">Props</h2>
-<table>
-<thead>
-<tr>
-<th>Prop</th>
-<th>Type</th>
-<th>Required</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title</td>
-<td>string</td>
-<td>No</td>
-<td></td>
-<td>Título acima da vitrine</td>
-</tr>
-<tr>
-<td>brandClass</td>
-<td>string</td>
-<td>Yes</td>
-<td>arno</td>
-<td>Identificação de qual marca se trata (Arno, Tefal ou Rochedo)</td>
-</tr>
-<tr>
-<td>cards</td>
-<td>Array of objects</td>
-<td>No</td>
-<td>[]</td>
-<td>Array de objetos com os dados das categorias</td>
-</tr>
-<tr>
-<td>shouldRender</td>
-<td>boolean</td>
-<td>No</td>
-<td>false</td>
-<td>Deve renderizar o componente ou não?</td>
-</tr>
-</tbody>
-</table>
-<h3 id="props-de-cards">Props de "cards"</h3>
-<p>Cada objeto no array de <code>cards</code> deve ter as seguintes propriedades:</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>image</td>
-<td>string</td>
-<td>No</td>
-<td>URL ou caminho da imagem do card</td>
-</tr>
-<tr>
-<td>title</td>
-<td>string</td>
-<td>No</td>
-<td>Título do card</td>
-</tr>
-<tr>
-<td>subTitle</td>
-<td>string</td>
-<td>No</td>
-<td>Subtítulo ou descrição do card</td>
-</tr>
-<tr>
-<td>linkUrl</td>
-<td>string</td>
-<td>No</td>
-<td>URL de destino do botão CTA</td>
-</tr>
-<tr>
-<td>linkLabel</td>
-<td>string</td>
-<td>No</td>
-<td>Texto do botão CTA</td>
-</tr>
-</tbody>
-</table>
-<h2 id="examples">Examples</h2>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">  </span><span class="s2">&quot;store.home&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="s2">&quot;blocks&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">      </span><span class="s2">&quot;custom-arno-special-selection&quot;</span><span class="p">,</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="p">]</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="p">}</span>
+<h2 id="exemplos">Exemplos</h2>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="s2">&quot;store.home&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="s2">&quot;children&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;custom-arno-special-selection&quot;</span><span class="p">]</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="notes">Notes</h2>
-<p>Additional information, gotchas, or important considerations when using this component.</p>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<h3 id="cards-personalizaveis">Cards Personalizáveis</h3>
+<p>O componente exibe cards com:</p>
+<ul>
+<li><strong>Imagens</strong>: Imagens representativas de cada card</li>
+<li><strong>Título e Subtítulo</strong>: Informações do card</li>
+<li><strong>Links</strong>: Navegação com CTA customizável</li>
+<li><strong>Layout Responsivo</strong>: Slider no mobile, grid no desktop</li>
+</ul>
+<h3 id="sistema-de-tracking">Sistema de Tracking</h3>
+<ul>
+<li><strong>Google Analytics</strong>: Evento disparado ao clicar em cada card</li>
+<li><strong>Evento Personalizado</strong>: <code>clicou_selecaoespecial_{index}</code> baseado na posição</li>
+<li><strong>ID de Tracking</strong>: <code>G-WBSPVQFS2L</code></li>
+</ul>
+<h3 id="layout-adaptativo">Layout Adaptativo</h3>
+<ul>
+<li><strong>Mobile</strong>: Slider com React Slick (1.25 slides visíveis)</li>
+<li><strong>Desktop</strong>: Grid com largura dividida igualmente entre cards</li>
+</ul>
+<h2 id="estrutura-de-dados">Estrutura de Dados</h2>
+<h3 id="propriedades-do-componente">Propriedades do Componente</h3>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">shouldRender</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span><span class="p">,</span><span class="w">  </span><span class="c1">// Controla exibição do componente</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nx">brandClass</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w">     </span><span class="c1">// Classe CSS da marca (default: &#39;arno&#39;)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w">          </span><span class="c1">// Título da seção</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nx">cards</span><span class="o">:</span><span class="w"> </span><span class="nb">Array</span><span class="o">&lt;</span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w">        </span><span class="c1">// Título do card</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nx">subTitle</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w">     </span><span class="c1">// Subtítulo do card</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nx">image</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w">        </span><span class="c1">// URL da imagem</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nx">linkUrl</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w">      </span><span class="c1">// URL de destino</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="nx">linkLabel</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="w">     </span><span class="c1">// Texto do botão (default: &#39;Comprar&#39;)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="p">}</span><span class="o">&gt;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="comportamento">Comportamento</h2>
+<h3 id="renderizacao-condicional">Renderização Condicional</h3>
+<p>O componente não renderiza se:</p>
+<ul>
+<li><code>shouldRender</code> for <code>false</code></li>
+<li>Array <code>cards</code> estiver vazio</li>
+</ul>
+<h3 id="navegacao-com-tracking">Navegação com Tracking</h3>
+<ol>
+<li>Previne comportamento padrão do link</li>
+<li>Envia evento para <code>dataLayer</code></li>
+<li>Redireciona para URL do card</li>
+</ol>
+<h3 id="layout-condicional">Layout Condicional</h3>
+<ul>
+<li><strong>Mobile</strong>: Cards em formato de imagem opcional, posicionamento baseado na presença de imagem</li>
+<li><strong>Desktop</strong>: Cards distribuídos uniformemente com largura calculada dinamicamente</li>
+</ul>
+<h2 id="configuracao-via-schema">Configuração via Schema</h2>
+<h3 id="propriedades-principais">Propriedades Principais</h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">shouldRender</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;boolean&#39;</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Deve aparecer&#39;</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nx">default</span><span class="o">:</span><span class="w"> </span><span class="kt">false</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nx">brandClass</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="p">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Classe da Marca&#39;</span><span class="p">,</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;arno&#39;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="p">,</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Título&#39;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">  </span><span class="nx">cards</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;array&#39;</span><span class="p">,</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">      </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w">        </span><span class="c1">// Título do card</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">      </span><span class="nx">subTitle</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w">     </span><span class="c1">// Subtítulo do card</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">      </span><span class="nx">image</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w">        </span><span class="c1">// Imagem (com image-uploader)</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">      </span><span class="nx">linkUrl</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w">      </span><span class="c1">// URL de destino</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">      </span><span class="nx">linkLabel</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w">     </span><span class="c1">// Texto do link</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="estrutura-de-classes-css">Estrutura de Classes CSS</h2>
+<ul>
+<li><code>.specialSelection</code>: Container principal</li>
+<li><code>.card</code>: Card individual com imagem</li>
+<li><code>.cardCenter</code>: Card sem imagem (centralizado)</li>
+<li><code>.cardImage</code>: Imagem do card</li>
+<li><code>.cardContent</code>: Container do conteúdo</li>
+<li><code>.cardTitle</code>: Título do card</li>
+<li><code>.cardSubTitle</code>: Subtítulo do card</li>
+<li><code>.cardLink</code>: Link/botão do card</li>
+</ul>
+<h2 id="configuracao-do-slider">Configuração do Slider</h2>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">dots</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">              </span><span class="c1">// Indicadores de navegação</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nx">infinite</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">         </span><span class="c1">// Não repete os slides</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nx">speed</span><span class="o">:</span><span class="w"> </span><span class="mf">500</span><span class="p">,</span><span class="w">             </span><span class="c1">// Velocidade da transição</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nx">slidesToShow</span><span class="o">:</span><span class="w"> </span><span class="mf">1.25</span><span class="p">,</span><span class="w">     </span><span class="c1">// Mostra 1.25 slides por vez</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nx">slidesToScroll</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w">      </span><span class="c1">// Avança 1 slide por vez</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span><span class="nx">arrows</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w">           </span><span class="c1">// Sem setas de navegação</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="dependencias">Dependências</h2>
+<ul>
+<li><code>react-slick</code>: Componente de slider</li>
+<li><code>vtex.device-detector</code>: Detecção de dispositivo mobile</li>
+<li><code>classnames</code>: Manipulação de classes CSS</li>
+<li>CSS Modules: Importação de estilos via <code>./styles.css</code></li>
+</ul>
+<h2 id="observacoes">Observações</h2>
+<ol>
+<li>Requer configuração via Site Editor para personalização</li>
+<li>Cards podem ter ou não imagens (layout se adapta)</li>
+<li>Tracking requer Google Analytics configurado</li>
+<li>Suporta upload de imagens via Site Editor</li>
+<li>Label do link é customizável (default: "Comprar")</li>
+<li>Suporta branding via <code>brandClass</code> para estilização específica</li>
+</ol>
 
 
 
