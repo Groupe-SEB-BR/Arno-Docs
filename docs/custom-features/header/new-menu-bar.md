@@ -2,6 +2,8 @@
 
 Componente para exibir uma barra de menu superior com suporte multi-brand (Arno, Rochedo, Tefal) com detecção automática de URL.
 
+![image](../../assets/new-menu-bar.jpg)
+
 ## Uso
 
 react/NewMenuBar.tsx

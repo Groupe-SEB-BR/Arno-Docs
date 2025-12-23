@@ -1,13 +1,13 @@
-# Minicart Gift Bar
+# Minicart - Barra de Brinde com Frete
 
-Este componente exibe um pop-up com um cupom de desconto quando um cliente adiciona itens ao carrinho, após um período de tempo determinado.
+Este componente exibe uma barra de progresso no minicart com metas de frete grátis e brinde, mostrando o progresso da compra em relação aos valores estabelecidos.
 
 ## Uso
 
 react/MinicartGiftBar.js
 
-```jsx
-import MinicartGiftBar from './components/MinicartGiftBar/index';
+```javascript
+import MinicartGiftBar from './components/MinicartGiftBar';
 
 export default MinicartGiftBar;
 ```
@@ -15,80 +15,39 @@ export default MinicartGiftBar;
 store/interfaces.json
 
 ```json
-  "arno-minicart-giftbar": {
-    "component": "MinicartGiftBar"
-  },
+"custom-arno-minicart-giftbar": {
+  "component": "MinicartGiftBar"
+}
 ```
 
 ## Props
 
-| Prop | Type | Required | Default | Description |
-|------|------|----------|---------|-------------|
-| priceFreeShipping | string | Yes | false | Valor para frete grátis |
-| priceGift | string | Yes | array | Valor para ganhar o brinde |
-| gift | string | Yes | 1 | Nome do brinde |
-| showGift | boolean | Yes | false | Ativar exibição do brinde? |
-| giftTooltip | string | Yes | false | Texto do pop-up ao passar o mouse sobre o presente |
-| shippingIcon | string | Yes | false | Ícone do frete |
-| giftIcon | string | Yes | false | Ícone do brinde |
+| Propriedade         | Tipo    | Padrão            | Descrição                      |
+| ------------------- | ------- | ----------------- | ------------------------------ |
+| `priceFreeShipping` | string  | '499.99'          | Valor para ativar frete grátis |
+| `priceGift`         | string  | '599.00'          | Valor para ganhar brinde       |
+| `gift`              | string  | 'um copo TEFAL'   | Nome do brinde                 |
+| `showGift`          | boolean | false             | Exibir meta de brinde          |
+| `giftTooltip`       | string  | 'Mês das mães...' | Texto do tooltip               |
+| `shippingIcon`      | string  | '🚚'              | Ícone do frete                 |
+| `giftIcon`          | string  | '🎁'              | Ícone do brinde                |
 
-### Schema
+## Funcionalidades
 
-```json
-  title: 'Minicart - Barra de brinde com frete',
-    description: 'Exibe barra com metas: frete grátis e brinde',
-    type: 'object',
-    properties: {
-      priceFreeShipping: {
-        type: 'string',
-        title: 'Valor para frete grátis',
-        default: '499.99',
-      },
-      priceGift: {
-        type: 'string',
-        title: 'Valor para ganhar o brinde',
-        default: '599.00',
-      },
-      gift: {
-        type: 'string',
-        title: 'Nome do brinde',
-        default: 'um copo TEFAL',
-      },
-      showGift: {
-        type: 'boolean',
-        title: 'Ativar exibição do brinde?',
-        default: true,
-      },
-      giftTooltip: {
-        type: 'string',
-        title: 'Texto do pop-up ao passar o mouse sobre o presente',
-        default: 'Mês das mães: compras acima de R$ 599 ganham um copo Tefal!',
-      },
-      shippingIcon: {
-        type: 'string',
-        title: 'Ícone do frete',
-        default: '🚚',
-      },
-      giftIcon: {
-        type: 'string',
-        title: 'Ícone do brinde',
-        default: '🎁',
-      },
-    },
-```
+- Barra de progresso com metas dinâmicas
+- Calcula subtotal com descontos aplicados
+- Ícone de frete avança conforme progresso
+- Ícone de brinde fixo na meta
+- Mensagens contextualizadas por estágio
+- Tooltip ao passar mouse sobre brinde
+- Formatação de valores em BRL
 
-## Exemplos
+## Estados
 
-```jsx
-  "flex-layout.row#content-giftbar-v2": {
-    "title": "Progress Bar",
-    "props": {
-      "blockClass": "content-giftbar-v2"
-    },
-    "children": ["arno-minicart-giftbar"]
-  },
-```
+- `valueCart`: Valor atual do carrinho em reais
 
-## Notes
+## Dependências
 
-Additional information, gotchas, or important considerations when using this component.
+- `react`: Hooks `useEffect`, `useState`
+- `vtex.order-manager/OrderForm`: Hook `useOrderForm`
+- `./styles.css`: Estilos customizados

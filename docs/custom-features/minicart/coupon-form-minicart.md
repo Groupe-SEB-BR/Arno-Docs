@@ -2,6 +2,8 @@
 
 Este componente fornece uma interface para aplicar e remover cupons de desconto no minicart, com sincronização automática dos preços e feedback visual para o usuário.
 
+![image](../../assets/cupom.png)
+
 ## Uso
 
 react/CustomFormMinicart.js

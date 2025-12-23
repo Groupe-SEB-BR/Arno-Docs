@@ -2,6 +2,8 @@
 
 Este componente redireciona cliques no link de avaliações para a aba de reviews e gerencia a exibição de contagem de avaliações.
 
+![image](../../assets/redirect.png)
+
 ## Uso
 
 react/RedirectToReviews.js

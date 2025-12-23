@@ -2,6 +2,8 @@
 
 Componente para exibir a barra preta superior com links configuráveis na página inicial.
 
+![image](../../assets/top-black-bar.jpg)
+
 ## Uso
 
 react/TopBlackBar.tsx

@@ -2,6 +2,8 @@
 
 Componente para exibir um botão preto configurável com suporte a integração Croct para personalização dinâmica.
 
+![image](../../assets/black-button.png)
+
 ## Uso
 
 react/BlackButton.tsx

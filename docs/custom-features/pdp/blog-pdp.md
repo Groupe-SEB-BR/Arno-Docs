@@ -2,6 +2,8 @@
 
 Este componente exibe o post de blog mais acessado relacionado ao produto na página de detalhes do produto (PDP), baseado em tags compartilhadas entre o produto e os posts.
 
+![image](../../assets/blog-pdp.png)
+
 ## Uso
 
 react/BlogPDP.js

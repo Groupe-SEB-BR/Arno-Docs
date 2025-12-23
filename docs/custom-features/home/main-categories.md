@@ -2,7 +2,7 @@
 
 Este componente exibe uma grade de categorias principais com imagens e links na página inicial, com tracking de cliques via Google Analytics.
 
-![image](../../assets/home-tabs.png)
+![image](../../assets/main-categories.png)
 
 ## Uso
 

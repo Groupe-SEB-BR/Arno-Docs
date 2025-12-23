@@ -1,67 +1,49 @@
-# Ofertas Relâmpago
+# Flash Sale Shelf Component
 
-Esse componente é reponsável pela vitrine de ofertas relâmpago, cada produto recebe uma data e horário para iniciar e finalizar a oferta.
-
-## TODO
-
-Refatorar o código de ofertas relâmpago para não depender da vitrine de Black Friday. Criar um componente para vitrine customizada que possa ser reutilizado facilmente, e outro para ofertas relâmpago que possa ser usado em qualquer página.
+Este componente exibe uma prateleira de produtos em promoção relâmpago, utilizando o `react-slick` para a renderização de um slider responsivo.
 
 ## Uso
 
-react/FlashSalesHome.js
+### BlackFridayV2.js
 
-```jsx
-import FlashSalesHome from './components/PDP/FlashSalesHome';
+```javascript
+import Shelfv2 from './componentes/Shelfv2';
 
-export default FlashSalesHome;
+<Shelfv2 id='ofertas-relampago' activePromotions={activePromotions[0] ?? []} />;
 ```
 
-store/interfaces.json
+### Timer
 
-```json
-  "custom-flash-sales-home": {
-    "component": "FlashSalesHome"
-  }
-```
+O componente `Timer` exibe uma contagem regressiva até a próxima meia-noite em tempo real para cada produto da vitrine.
 
-## Props
+#### Props
 
-| Prop         | Type             | Required | Default | Description                                  |
-| ------------ | ---------------- | -------- | ------- | -------------------------------------------- |
-| activePromotions         | Array of objects | Yes      | []      | Array de objetos com os produtos |
+- `timer` (string, padrão: `'23:59:59'`): Proprietário ignorado; o timer sempre conta até a próxima meia-noite local.
+- `string` (string, padrão: `''`): Texto exibido quando `timer` é falso ou nulo.
 
-### Props de `activePromotions`
+#### Comportamento
 
-Cada objeto no array de `activePromotions` deve ter as seguintes propriedades:
+- Atualiza a contagem a cada segundo usando `setInterval`.
+- Calcula o tempo restante até a próxima meia-noite local.
+- Exibe horas, minutos e segundos em formato `HH:MM:SS`.
+- Se não houver tempo restante, exibe zeros (`00:00:00`).
 
-| Property | Type   | Required | Description                           |
-| -------- | ------ | -------- | ------------------------------------- |
-| productClusterId    | string | Yes      | Id da coleção cadastrada na VTEX      |
-| image    | string | No       | Banner acima da vitrine                        |
-| title | string | No       | Título da vitrine        |
-| description     | string | No      | Descrição da vitrine           |
-| ctaButton | string | No       | Texto do botão abaixo da vitrine                    |
-| ctaButtonLink | string | No       | Link do botão                    |
-| items | Array of objects | Yes       | Produtos da vitrine                    |
+## Funcionalidades
 
-### Props de `items`
+- Exibição de produtos em promoção relâmpago.
+- Carregamento dinâmico de produtos com base em promoções ativas.
+- Renderização responsiva com suporte a dispositivos móveis.
+- Controle de estado para gerenciar carregamento e exibição de produtos.
 
-| Property | Type   | Required | Description                           |
-| -------- | ------ | -------- | ------------------------------------- |
-| id    | string | Yes      | Id do produto      |
-| initialDate    | Date | Yes       | Data e horário inicial da oferta                        |
-| endDate | Date | Yes       | Data e horário final da oferta        |
+## Dependências
 
-## Exemplos
+- `react`: Para gerenciamento de estado e efeitos colaterais.
+- `react-slick`: Para a implementação do slider.
+- `vtex.device-detector`: Para detectar o tipo de dispositivo.
 
-```jsx
-  "store.home": { 
-    "blocks": [
-      "custom-flash-sales-home",
-    ]
-  }
-```
+## Observações
 
-## Notes
-
-Os produtos dentro da coleção na VTEX devem estar na ordem das datas que eles vão ser ofertados.
+1. O componente aguarda a disponibilidade das promoções ativas.
+2. A renderização do slider é adaptativa, dependendo do dispositivo.
+3. O componente utiliza um sistema de loading para melhorar a experiência do usuário.
+4. Os produtos são enriquecidos com informações de parcelas, se disponíveis.

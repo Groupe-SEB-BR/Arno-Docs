@@ -2,6 +2,8 @@
 
 Este componente exibe uma seleção especial de cards com imagens, títulos e links na página inicial, com suporte a slider no mobile e tracking de cliques via Google Analytics.
 
+![image](../../assets/selecao-especial.png)
+
 ## Uso
 
 react/SpecialSelection.js

@@ -2,6 +2,8 @@
 
 Este componente exibe um slider de banners na página inicial com suporte a Croct para personalização, tracking de cliques via Google Analytics e cronômetro countdown opcional.
 
+![image](../../assets/slider-hero.png)
+
 ## Uso
 
 react/SliderHero.tsx

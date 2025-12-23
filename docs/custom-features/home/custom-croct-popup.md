@@ -1,6 +1,8 @@
-# Minicart Checker Popup
+# Custom Croct Popup
 
 Componente que monitora alterações no carrinho e exibe um popup com cupom de desconto após um período configurável. Ideal para capturar a atenção do usuário após adicionar produtos ao carrinho.
+
+![image](../../assets/popup-cupom.png)
 
 ## Uso
 

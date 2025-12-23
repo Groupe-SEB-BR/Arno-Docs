@@ -2,6 +2,11 @@
 
 Este componente exibe o resumo detalhado de preços no minicart, incluindo subtotal, descontos, frete e opções de pagamento (PIX e parcelamento).
 
+![image](../../assets/resumo-minicart.png)
+
+Descontos aplicados:
+![image](../../assets/modal-desconto.png)
+
 ## Uso
 
 react/ResumePriceMinicart.js

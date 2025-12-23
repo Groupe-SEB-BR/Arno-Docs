@@ -2,6 +2,8 @@
 
 Este componente permite a exibição de conteúdo enriquecido personalizado na página de produto, extraindo HTML e scripts de uma propriedade específica do produto.
 
+![image](../../assets/conteudo-enriquecido.png)
+
 ## Uso
 
 react/EnrichedContent.js

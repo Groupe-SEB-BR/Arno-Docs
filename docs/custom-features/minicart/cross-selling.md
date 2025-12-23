@@ -2,6 +2,8 @@
 
 Este componente exibe sugestões de produtos relacionados no minicart, permitindo ao usuário adicionar produtos complementares ao carrinho sem sair da página atual.
 
+![image](../../assets/cross-selling.png)
+
 ## Uso
 
 react/CrossSelling.js

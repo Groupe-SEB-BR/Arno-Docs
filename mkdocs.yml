@@ -1,12 +1,16 @@
 site_name: Arno Store
 nav:
   - Header:
+    - Meta Tags: custom-features/header/meta-tags.md
+    - Data Structure: custom-features/header/data-structure.md
     - Black Bar: custom-features/header/top-black-bar.md
     - Menu Bar: custom-features/header/new-menu-bar.md
     - Black Button: custom-features/header/black-button.md
+  - Account:
+    - Script Yami: custom-features/account/script-yami.md
   - Home:
-    - Custom Croct Popup: custom-features/minicart/custom-croct-popup.md
-    - Popup: custom-features/home/home-popup.md
+    - Custom Croct Popup: custom-features/home/custom-croct-popup.md
+    - Newsletter Popup: custom-features/home/newsletter-popup.md
     - Slider Hero: custom-features/home/slider-hero.md
     - Main Categories: custom-features/home/main-categories.md
     - Home Tabs: custom-features/home/home-tabs.md
@@ -16,13 +20,14 @@ nav:
     - Blog Post: custom-features/pdp/blog-pdp.md
     - Enriched Content: custom-features/pdp/enriched-content.md
     - Redirect to Reviews: custom-features/pdp/redirect-reviews.md
+  - Search:
+    - Meta Tags Categories: custom-features/search/meta-tags-categories.md
   - Minicart:
     - Gift Bar: custom-features/minicart/arno-minicart-giftbar.md
     - Coupon Form: custom-features/minicart/coupon-form-minicart.md
     - Price Resume: custom-features/minicart/custom-arno-resume-price-minicart.md
     - Custom Price: custom-features/minicart/change-price-minicart.md
     - Cross Selling: custom-features/minicart/cross-selling.md
-    - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
   - Blog:
     - Blog API Masterdata: custom-features/blog/api-masterdata.md
     - Blog Home: custom-features/blog/home.md
@@ -30,16 +35,17 @@ nav:
     - Blog Category: custom-features/blog/category.md
     - Blog Post: custom-features/blog/post.md
     - Blog Tag: custom-features/blog/tag.md
+  - Institutional:
+    - Vendas Corporativas: custom-features/institutional/venda-corporativa-form.md
+    - Black Friday 2025: custom-features/institutional/black-friday-2025.md
+  - Shelves:
+    - Ofertas Relâmpago: custom-features/shelves/ofertas-relampago.md
   - Checkout:
     - Awin Cookies: custom-features/checkout/awin-cookies.md
     - Awin Conversion: custom-features/checkout/awin-conversion.md
-  - Global Features:
-    - Meta Tags: custom-features/home/meta-tags.md
-    - Data Structure: custom-features/home/data-structure.md
-    - Flash Sales: custom-features/home/flash-sales-home.md
-    - Flash Sales: custom-features/shelves/ofertas-relampago.md
-  - Legado:
-    - Croct Controler Component: custom-features/minicart/croct-controler-component.md
+    - Checkout UI Custom: custom-features/checkout/checkout-ui-custom.md
+  - Global:
+    - Pixel APP: custom-features/global/pixel-app.md
 theme:
   name: material
   font:

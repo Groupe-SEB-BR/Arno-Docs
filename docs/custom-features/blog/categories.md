@@ -49,7 +49,7 @@ store/interfaces.json
 1. **Este componente não recebe nenhuma prop como parâmetro**
 2. É um componente auto-suficiente que busca seus próprios dados
 3. Gerencia seu estado interno (`categories` e `loading`)
-4. Busca categorias usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](/custom-features/blog/api-masterdata/)
+4. Busca categorias usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](./api-masterdata.md)
 
 ## Funcionamento do Componente
 

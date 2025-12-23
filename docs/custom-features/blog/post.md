@@ -158,7 +158,7 @@ Este componente utiliza o contexto `usePost` para obter:
 
 ## Observações
 
-1. Busca o post baseado na URL atual usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](/custom-features/blog/api-masterdata/)
+1. Busca o post baseado na URL atual usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](./api-masterdata.md)
 
 ### Tratamento de Erros
 

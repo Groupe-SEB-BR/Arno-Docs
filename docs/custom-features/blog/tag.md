@@ -132,7 +132,7 @@ Botão "Carregar mais" (condicional):
 
 ## Observações
 
-1. Busca todos os posts via API do Masterdata e filtra localmente pela tag. Para mais detalhes visualizar [Blog API Masterdata](/custom-features/blog/api-masterdata/)
+1. Busca todos os posts via API do Masterdata e filtra localmente pela tag. Para mais detalhes visualizar [Blog API Masterdata](./api-masterdata.md)
 2. A tag é identificada pela URL slugificada (ex: `/blog/tag/receitas-rapidas`)
 3. Os posts são carregados em lotes de 12
 

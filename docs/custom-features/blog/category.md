@@ -105,7 +105,7 @@ Este componente utiliza o contexto `useCategory` para obter:
 
 ## Observações
 
-1. Busca a categoria usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](/custom-features/blog/api-masterdata/)
+1. Busca a categoria usando a API do Masterdata. Para mais detalhes visualizar [Blog API Masterdata](./api-masterdata.md)
 
 ### Tratamento de Erros
 
