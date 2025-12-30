@@ -48,6 +48,9 @@ nav:
     - Checkout UI Custom: custom-features/checkout/checkout-ui-custom.md
   - Global:
     - Pixel APP: custom-features/global/pixel-app.md
+  - Site Editor:
+    - Black Bar: site-editor/header/top-black-bar.md
+    - Slider Hero: site-editor/home/slider-hero.md
 theme:
   name: material
   font:
