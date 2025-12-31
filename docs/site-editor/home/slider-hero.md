@@ -8,6 +8,10 @@ Slider Hero
 
 ![image](../../assets/site-editor/slider-hero.png)
 
+## Visão Geral
+
+O Slider Hero é um componente de carrossel de imagens posicionado no topo da página inicial. Este componente exibe uma sequência de banners promocionais em rotação automática, otimizados tanto para desktop quanto para dispositivos móveis. Cada slide contém uma imagem específica para cada tipo de dispositivo e um link de destino, permitindo direcionar os usuários para páginas de produtos, promoções ou categorias específicas. É um elemento estratégico para destacar campanhas, lançamentos e ofertas principais da loja.
+
 ## Onde encontrar
 
 Home Arno, Tefal e Rochedo.

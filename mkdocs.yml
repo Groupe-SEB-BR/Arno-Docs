@@ -49,8 +49,14 @@ nav:
   - Global:
     - Pixel APP: custom-features/global/pixel-app.md
   - Site Editor:
-    - Black Bar: site-editor/header/top-black-bar.md
+    - Top Black Bar: site-editor/header/top-black-bar.md
     - Slider Hero: site-editor/home/slider-hero.md
+    - Ofertas Relâmpago: site-editor/home/ofertas-relampago.md
+    - Seleção Especial: site-editor/home/selecao-especial.md
+    - Main Categories: site-editor/home/main-categories.md
+    - Barra de Benefícios: site-editor/home/barra-de-beneficios.md
+    - Shelf Lancamentos: site-editor/home/shelf-lancamentos.md
+    - Vitrine multibranding: site-editor/home/vitrine-multibranding.md
 theme:
   name: material
   font:
