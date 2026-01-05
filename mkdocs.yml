@@ -61,6 +61,8 @@ nav:
     - Barra de Benefícios: site-editor/home/barra-de-beneficios.md
     - Shelf Lancamentos: site-editor/home/shelf-lancamentos.md
     - Vitrine multibranding: site-editor/home/vitrine-multibranding.md
+    - Marcas Home: site-editor/home/marcas-home.md
+    - Newsletter Home: site-editor/home/newsletter.md
     - SEO: site-editor/pdc/seo-pdc.md
 theme:
   name: material
