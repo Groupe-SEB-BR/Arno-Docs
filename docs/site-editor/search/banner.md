@@ -17,9 +17,7 @@ Caminho geral:
 
 ## Visão geral
 
-O componente **SEO** permite criar uma seção composta por **cards promocionais**, normalmente usados para destacar categorias, linhas de produto ou campanhas específicas.
-
-Cada card possui imagem, título, subtítulo e link, funcionando como um atalho visual para páginas estratégicas.
+O componente **Search Header** permite criar um banner no topo das páginas de busca e categorias da loja.
 
 ## Campos do componente
 

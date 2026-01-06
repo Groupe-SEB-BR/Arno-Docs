@@ -53,7 +53,8 @@ nav:
     - Black Button: site-editor/header/black-button.md
     - Menu Desktop: site-editor/header/menu-desktop.md
     - Menu Mobile: site-editor/header/menu-mobile.md
-    - Search Header:  site-editor/pdc/banner.md
+    - Search Header:  site-editor/search/banner.md
+    - Coleção de produtos: site-editor/search/collection.md
     - Slider Hero: site-editor/home/slider-hero.md
     - Ofertas Relâmpago: site-editor/home/ofertas-relampago.md
     - Seleção Especial: site-editor/home/selecao-especial.md
@@ -63,7 +64,9 @@ nav:
     - Vitrine multibranding: site-editor/home/vitrine-multibranding.md
     - Marcas Home: site-editor/home/marcas-home.md
     - Newsletter Home: site-editor/home/newsletter.md
-    - SEO: site-editor/pdc/seo-pdc.md
+    - SEO: site-editor/search/seo-pdc.md
+  - VTEX:
+    - Nova Página Coleção: vtex/new-collection-page.md
 theme:
   name: material
   font:
