@@ -67,6 +67,7 @@ nav:
     - SEO: site-editor/search/seo-pdc.md
   - VTEX:
     - Nova Página Coleção: vtex/new-collection-page.md
+    - Como alimentar o Blog Arno: vtex/blog-masterdata.md
 theme:
   name: material
   font:

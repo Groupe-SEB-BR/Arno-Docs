@@ -37,6 +37,8 @@ O componente `Shelf` gerencia a exibição de prateleiras de ofertas relâmpago,
 #### Shelf Props
 
 - `id` (string): Identificador único da prateleira.
+- `darkMode` (boolean): A página está em modo escuro ou não.
+- `showSession` (string): Deve mostrar a sessão ou não.
 - `activePromotions` (array): Lista de promoções ativas a serem exibidas.
 - `oneProductPerTime` (boolean): Define se deve exibir um produto por vez ou múltiplos produtos.
 - `showDays` (boolean): Controla a exibição de dias na contagem regressiva.

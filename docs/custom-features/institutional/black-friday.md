@@ -5,16 +5,16 @@ Componente da página de Black Friday 2025 para Arno, Rochedo e Tefal, integrand
 ## Uso
 
 ```javascript
-import BlackFriday2025v2 from './components/BlackFriday2025v2';
+import BlackFridayLP from './components/BlackFridayLP';
 
-export default BlackFriday2025v2;
+export default BlackFridayLP;
 ```
 
 interfaces.json
 
 ```json
-"custom-arno-black-friday-2025-v2": {
-  "component": "BlackFriday2025v2"
+"custom-arno-black-friday-lp": {
+  "component": "BlackFridayLP"
 },
 ```
 
@@ -22,11 +22,11 @@ interfaces.json
 
 ```json
 {
-  "store.custom#arno-lp-black-friday-25-v2": {
+  "store.custom#arno-lp-black-friday-25": {
     "children": [
       "custom-arno-meta-tags",
       "custom-arno-data-structure",
-      "custom-arno-black-friday-2025-v2"
+      "custom-arno-black-friday-lp"
     ]
   }
 }
@@ -39,8 +39,8 @@ BlackFriday2025 (Component)
 ├── div (container principal)
 │   └── Banner
 │   └── Bar
-│   └── Shelf Flash Sales
-│   └── Shelf Progressive Discounts
+│   └── FlashSales (Ofertas Relâmpago)
+│   └── FlashSales (Descontos Progressivos)
 │   └── Seo
 ```
 
@@ -50,7 +50,7 @@ BlackFriday2025 (Component)
 
 - `Banner`: Banner principal acima da dobra
 - `Bar`: Barra de benefícios
-- `Shelfv2`: Vitrines de produtos com promoções. Para mais detalhes ver [Ofertas Relâmpago](./../shelves/ofertas-relampago.md)
+- `FlashSales`: Vitrines de produtos com promoções (ofertas relâmpago e descontos progressivos). Para mais detalhes ver [Flash Sales](./../shelves/flash-sales.md)
 - `Seo`: Conteúdo otimizado para SEO
 
 ### Scroll Automático para Promoções
@@ -65,10 +65,11 @@ BlackFriday2025 (Component)
 - `aboveTheFold`: Objeto com título, descrição e subtítulo
 - `barContent`: Array de objetos com ícone e descrição de benefícios
 - `seoContent`: Array com título e descrição meta
-- `activePromotions`: Array de duas vitrines com produtos em promoção
+- `activePromotions`: Configuração da vitrine de ofertas relâmpago (ID da coleção, título, descrição, imagem e items com datas)
+- `commonShelf`: Configuração da vitrine de descontos progressivos (ID da coleção, título, descrição, imagem, texto e link do CTA)
 
 ## Dependências
 
 - `react`: Hooks `useEffect`
 - `vtex.render-runtime`: Hook `useRuntime`
-- Componentes customizados: `Bar`, `Shelfv2`, `Banner`, `Seo`, `SpecialSelection`
+- Componentes customizados: `Bar`, `Banner`, `Seo`, `FlashSales`
