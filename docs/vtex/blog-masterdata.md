@@ -13,13 +13,7 @@ O Master Data da VTEX pode ser acessado através do painel administrativo:
 ### Edição Individual
 
 1. Acesse a entidade **Blog Post** no Master Data
-2. Utilize os filtros disponíveis para localizar o post desejado:
-
-- Pesquisa por título
-- Filtro por categoria
-- Filtro por marca (Brand)
-- Filtro por status de publicação
-
+2. Localize o post a ser editado
 3. Clique no ícone de edição (lápis) ao lado do registro
 4. Realize as alterações necessárias nos campos
 5. Clique em **Salvar** para aplicar as mudanças
@@ -42,7 +36,7 @@ O Master Data da VTEX pode ser acessado através do painel administrativo:
 
 - Importante: Mesmo que o export tenha vindo como .csv, a importação deve ser feita com .xls
 
-2. Retorne à home no Master Data
+2. Retorne à home no Master Data no botão **Application**
 3. Clique em **Import XLS**
 4. Faça upload do arquivo editado
 5. Aguarde a validação e processamento
@@ -57,19 +51,6 @@ O Master Data da VTEX pode ser acessado através do painel administrativo:
 - Teste as alterações em poucos registros antes de importar em massa
 
 ## Validações e boas práticas
-
-### Campos obrigatórios
-
-- URL do Post
-- Título do Post
-- Brand
-- Categoria do Post
-
-### SEO
-
-- Sempre preencha **Título do MetaDado** e **Descrição do MetaDado**
-- Mantenha o título com no máximo 60 caracteres
-- Mantenha a descrição entre 150-160 caracteres
 
 ### Imagens
 
@@ -102,7 +83,7 @@ _Título principal exibido na página do post._
 
 **Descrição do Post**:
 
-HTML do post que será publicado.
+Conteúdo que será o corpo da publicação, pode conter ou não HTML.
 
 ```html
 <style>
