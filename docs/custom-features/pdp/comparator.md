@@ -41,6 +41,7 @@ store/interfaces.json
 - Filtra produtos da mesma categoria do produto atual
 - Exclui produtos com "kit" no nome
 - Suporta até 4 produtos para comparação
+- Permite que o usuário adicione o produto ao carrinho com seletor de SKU e botão "Adicionar ao carrinho"
 
 ### Responsividade
 
@@ -105,6 +106,7 @@ store/interfaces.json
 - `productsToCompare`: Lista completa de produtos
 - `productsToList`: Lista de até 4 produtos
 - `setProductsToList`: Função para atualizar lista exibida
+- `handleSetSelectedSku`: Função para atualizar o SKU selecionado de um produto específico. Recebe como parâmetros o `productId` (identificador do produto) e `sku` (SKU a ser selecionado), e atualiza o estado `selectedSkuByProduct` mantendo os SKUs previamente selecionados de outros produtos.
 
 ## Observações
 
@@ -114,3 +116,5 @@ store/interfaces.json
 4. Recarrega quando produto muda
 5. Detecta automaticamente dispositivo (mobile/desktop)
 6. Filtra por ID da categoria do produto atual
+7. Verifica se um SKU foi selecionado e se está disponível no estoque 
+8. Botão de adicionar ao carrinho desabilitado quando nenhum SKU válido está selecionado
